@@ -13,8 +13,7 @@
     <script src="js/selectivizr-min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/common.css"/>
-    <link rel="stylesheet" href="css/page-user-creat-project.css">
-    <link rel="stylesheet" href="css/page-myProject-list.css">
+    <link rel="stylesheet" href="css/supply.css">
 </head>
 <body>
     <!--顶部固定内容-start-->
@@ -260,14 +259,22 @@
                     <div class="side">
                         <div class="menu">
                             <div class="menu-item">
-                                <div class="menu-tit founder">我是创业者</div>
+                                <div class="menu-tit founder">基本信息</div>
                                 <ul class="menu-list">
-                                    <li class="item cur"><a href="/order/usercenter">已订购的服务</a></li>
-                                    <li class="item "><a href="/Mkacc/userMkaccInfo">我的创业红包</a></li>
-                                    <li class="item "><a href="/startup/listproj">我的项目</a></li>
+                                    <li class="item "><a href="">基本资料</a></li>
+                                    <li class="item "><a href="">修改密码</a></li>
+                                    <li class="item "><a href="">银行卡信息</a></li>
                                 </ul>
                             </div>
-
+                            <div class="menu-item">
+                                <div class="menu-tit founder">我是服务商</div>
+                                <ul class="menu-list">
+                                    <li class="item "><a href="">已销售的订单</a></li>
+                                    <li class="item "><a href="">我的服务项目</a></li>
+                                    <li class="item "><a href="">结算统计</a></li>
+                                    <li class="item cur"><a href="">关于我们</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +286,7 @@
                     </div>
                     <div class="mod-white-box mod-tab-content">
                         <div class="tab-content">
-                            <div class="ui-table theme-1 table-mall">
+                            <div class="tab-content-item">
                                 <div class="mod-form">
                                         <div class="mod-form-bd">
                                             <div class="mod-form-row">
@@ -289,11 +296,7 @@
                                                 </div>
                                                 <div class="mod-form-cont">
                                                     <div class="mod-form-col">
-                                                        <div class="ui-textarea count default-w">
-                                                            <textarea name="c_team_adv" placeholder="多行文本" rows="5" ></textarea>
-                                                            <div class="ui-textarea-bg"></div>
-                                                            <label class="ui-textarea-count"><i>0</i>/<i>100</i></label>
-                                                        </div>
+                                                        <textarea class="normal-textarea" placeholder="多行文本"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,13 +420,11 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
-    <script>
-        var G_DATA = {
-            "isCorp": "0"
-        };
-        var pageId = 6009;
-    </script>
-    <script src="js/facilitator.aboutUs.entry.js"></script>
+   <script type="text/javascript">
+       $(function(){
+
+       })
+   </script>
     <!-- javascript code end -->
 
 </body>

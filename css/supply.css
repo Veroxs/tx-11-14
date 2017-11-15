@@ -1924,3 +1924,412 @@ input[disabled] ~ label {
 .mod-tips.mt {
     margin-top: 20px
 }
+
+/*mall-container*/
+.mall-container .layout:after, .mall-container .layout:before {
+    content: '';
+    display: table;
+    font: 0/0 a
+}
+
+.mall-container .layout:after {
+    clear: both
+}
+
+.mall-container .customer-order-content .contact-box .item .info, .table-mall .code, .ui-table td {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal
+}
+.mall-container {
+    font-size: 14px;
+    margin-bottom: 85px
+}
+
+.mall-container .side {
+    float: left;
+    width: 180px
+}
+
+.mall-container .main {
+    float: right;
+    width: 990px
+}
+
+.mall-container .menu {
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #878787;
+    padding-bottom: 29px
+}
+.mall-container .menu .menu-item{
+    border-top: 1px solid #e2e2e2;
+}
+.mall-container .menu  .menu-list{
+    padding-bottom: 6px;
+}
+.mall-container .menu .menu-item:first-of-type{
+    border-top: 0;
+}
+
+.mall-container .menu-item.mt {
+    margin-top: 16px
+}
+
+.mall-container .menu-item.open .menu-tit .arrow {
+    height: 0;
+    width: 0;
+    border-radius: 3px;
+    border-bottom: 6px solid #b1b9b6;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent
+}
+
+.mall-container .menu-item.open .menu-tit .arrow:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-radius: 3px
+}
+
+.mall-container .menu-item.open .menu-tit .arrow:after {
+    left: -6px;
+    top: 2px;
+    border-bottom: 6px solid #fff;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent
+}
+
+.mall-container .menu-item.close .menu-tit .arrow {
+    height: 0;
+    width: 0;
+    border-radius: 3px;
+    border-top: 6px solid #b1b9b6;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent
+}
+
+.mall-container .menu-item.close .menu-tit .arrow:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-radius: 3px
+}
+
+.mall-container .menu-item.close .menu-tit .arrow:after {
+    left: -6px;
+    bottom: 2px;
+    border-top: 6px solid #fff;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent
+}
+
+.mall-container .menu-item.close .menu-list {
+    height: 0;
+    overflow: hidden
+}
+
+.mall-container .menu-tit {
+    padding-left: 53px;
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.mall-container .menu-tit:after {
+    position: absolute;
+    content: '';
+    top: 50%
+}
+
+.mall-container .menu-tit.userinfo:after {
+    width: 20px;
+    height: 17px;
+    background-image: url(../images/sprite-0d84d153dd.mall.png);
+    background-position: 0 0;
+    left: 20px;
+    margin-top: -9px
+}
+
+.mall-container .menu-tit.founder:after {
+    width: 19px;
+    height: 17px;
+    background-image: url(../images/sprite-0d84d153dd.mall.png);
+    background-position: -24px 0;
+    left: 18px;
+    margin-top: -9px
+}
+
+.mall-container .menu-tit.provider:after {
+    width: 23px;
+    height: 13px;
+    background-image: url(../images/sprite-0d84d153dd.mall.png);
+    background-position: 0 -21px;
+    left: 18px;
+    margin-top: -7px
+}
+
+.mall-container .menu-tit .arrow {
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    margin-top: -3px
+}
+
+.mall-container .menu-list .item {
+    line-height: 38px
+}
+
+.mall-container .menu-list .cur {
+    line-height: 36px;
+    border-left: 4px solid #1cbcb4
+}
+
+.mall-container .menu-list .cur a {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding-left: 47px;
+    background-color: #f8f8f8;
+    color: #323232
+}
+
+.mall-container .menu-list a {
+    display: block;
+    padding-left: 51px;
+    color: #878787
+}
+
+.mall-container .menu-list a:hover {
+    color: #323232;
+    text-decoration: none;
+    background-color: #f8f8f8
+}
+
+.mall-container .mod-tab-panel {
+    position: relative
+}
+
+.mall-container .mod-tab-panel .tab-item {
+    font-size: 14px;
+    border-left: none;
+    border-right: none;
+    background: none
+}
+
+.mall-container .mod-tab-panel .tab-item.cur {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-bottom-color: #fff
+}
+
+.mall-container .mod-tab-panel .tab-item.cur .item-in {
+    padding: 0 27px
+}
+
+.mall-container .mod-tab-panel .tab-item .item-in {
+    line-height: 44px;
+    position: relative
+}
+
+.mall-container .mod-tab-panel .tab-item.unread .item-in:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #f4615c;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 3px
+}
+
+.mall-container .mod-tab-panel .ui-button {
+    position: absolute;
+    right: 20px;
+    top: 6px
+}
+
+.mall-container .mod-tab-content {
+    border-top: none;
+    padding: 20px 20px 0
+}
+
+.mall-container .customer-order-content {
+    padding: 24px;
+    margin-bottom: 28px
+}
+
+.mall-container .customer-order-content .title {
+    font-size: 18px;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.mall-container .customer-order-content .title.title-payment {
+    display: block
+}
+
+.mall-container .customer-order-content .status {
+    margin-left: 18px;
+    color: #323232;
+    font-size: 16px;
+    line-height: 28px
+}
+
+.mall-container .customer-order-content .emph {
+    color: #ef6512
+}
+
+.mall-container .customer-order-content .ver-code {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 16px
+}
+
+.mall-container .customer-order-content .copy {
+    color: #1cbcb4;
+    margin-left: 12px
+}
+
+.mall-container .customer-order-content .code-inst {
+    margin-bottom: 12px
+}
+
+.mall-container .customer-order-content .contact-box {
+    font-size: 0;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.mall-container .customer-order-content .contact-box .item {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.mall-container .customer-order-content .contact-box .item .info {
+    color: #323232;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 6px
+}
+
+.mall-container .customer-order-content .serial {
+    margin-left: 8px
+}
+
+.mall-container .customer-order-content .submit-time {
+    margin-left: 42px
+}
+
+.mall-container .customer-order-content .message-wrap {
+    margin-top: 20px
+}
+
+.mall-container .customer-order-content .message-wrap .ui-textarea-x {
+    width: 618px
+}
+
+.mall-container .customer-order-content .op-step {
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.mall-container .customer-order-content .op-step .item {
+    float: left;
+    list-style-type: decimal;
+    margin-left: 24px
+}
+
+.mall-container .order-summery {
+    text-align: right
+}
+
+.mall-container .order-summery .total {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px
+}
+
+.mall-container .order-summery .total .cost {
+    font-size: 28px;
+    line-height: 36px;
+    color: #ef6512;
+    display: inline-block;
+    width: 216px
+}
+
+.mall-container .order-summery .project {
+    line-height: 20px;
+    margin-bottom: 12px
+}
+
+.mall-container .order-summery .project .proj-icon {
+    vertical-align: middle;
+    margin-right: 6px
+}
+
+.mall-container .order-summery .contact {
+    margin-bottom: 12px
+}
+
+.mall-container .order-summery .contact .contact-phone {
+    margin-left: 12px
+}
+
+.mall-container .order-summery .agreement {
+    margin-bottom: 28px
+}
+
+.mall-container .order-summery .agreement a {
+    color: #1cbcb4
+}
+
+.mall-container .order-summery .button-wrap {
+    font-size: 0
+}
+
+.mall-container .order-summery .button-wrap .ui-button {
+    margin-left: 12px
+}
+
+.mall-container .order-summery .orig-price, .mall-container .order-summery .redeem-price {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 14px
+}
+
+.mall-container .order-summery .orig-price .cost, .mall-container .order-summery .redeem-price .cost {
+    display: inline-block;
+    width: 220px
+}
+.mod-white-box {
+    padding: 24px;
+    margin-bottom: 28px;
+    background: #fff;
+    border: 1px solid #e2e2e2
+}
+
+/*new style*/
+.tab-content .tab-content-item{
+    padding-bottom: 20px;
+}
+.normal-textarea{
+    width: 470px;
+    height: 130px;
+    border: 1px solid #e2e2e2;
+    outline: none;
+    padding: 8px;
+    line-height: 1.5;
+    font-size: 16px;
+    resize: none;
+
+}
