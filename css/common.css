@@ -2022,3 +2022,30 @@ button, input, select, textarea {
 .lv:hover {
     color: #fff !important
 }
+
+/*add style*/
+.mall-container .menu-tit {
+    padding-left: 53px;
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+    background: #fefefe;
+    border-bottom: 1px solid #e2e2e2;
+}
+.mall-container .menu .menu-item{
+    border-top: 1px solid #e2e2e2;
+}
+.mall-container .menu .menu-item:first-of-type{
+    border-top: 0;
+}
+.mall-container .menu-list .item:first-of-type.cur a{
+    border-top: 0;
+}
+.ui-button-gray.disabled {
+    background-color: #ccc;
+    color: #fff;
+    border-color: #ccc
+}
+.ui-button-gray.disabled:hover {
+    background-color: #ccc
+}

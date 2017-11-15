@@ -280,360 +280,964 @@
                 </div>
                 <div class="main">
                     <div class="mod-tab-panel">
-                        <div class="tab-item cur" data-status="0"><span class="item-in">全部订单</span></div>
-                        <div class="tab-item" data-status="1"><span class="item-in">待付款</span></div>
-                        <div class="tab-item" data-status="2"><span class="item-in">待确认</span></div>
-                        <div class="tab-item" data-status="3"><span class="item-in">待交付</span></div>
-                        <div class="tab-item" data-status="4"><span class="item-in">待验收</span></div>
-                        <div class="tab-item" data-status="5_1"><span class="item-in">待评价</span></div>
-                        <div class="tab-item" data-status="5_2"><span class="item-in">已完成</span></div>
-                        <div class="tab-item" data-status="9"><span class="item-in">已取消</span></div>
+                        <div class="tab-item cur"><span class="item-in">全部订单</span></div>
+                        <div class="tab-item"><span class="item-in">待付款</span></div>
+                        <div class="tab-item"><span class="item-in">待确认</span></div>
+                        <div class="tab-item"><span class="item-in">待交付</span></div>
+                        <div class="tab-item"><span class="item-in">待验收</span></div>
+                        <div class="tab-item"><span class="item-in">待评价</span></div>
+                        <div class="tab-item"><span class="item-in">已完成</span></div>
+                        <div class="tab-item"><span class="item-in">已取消</span></div>
                     </div>
                     <div class="mod-white-box mod-tab-content">
-                        <div class="tab-content jmod_result_wrap">
+                        <div class="tab-content-orderAll">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
 
-                            <div class="ui-table-hd all-thead table-order-c" "="">
-                            <span class="col-service-content">订单内容</span>
-                            <span class="col-price">单价</span>
-                            <span class="col-quantity">数量</span>
-                            <span class="col-redeem">优惠</span>
-                            <span class="col-actual-price">实付价</span>
-                            <span class="col-status">订单状态</span>
-                            <span class="col-opt">订单操作</span>
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                            <p><a href="" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;">项目确认</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
+
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                            <p><a href="" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;">请求交付</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
+
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                            <p><a href="" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;">请求验收</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
+
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                            <p><a href="" class="ui-button ui-button-sm ui-button-gray jmod_pay_order disabled" style="color:#fff;">等待评价</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
+
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak">无</p><p>
+                                        </p></td>
+                                        <td>
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待付款</p>
+
+                                        </td>
+                                        <td>
+
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110768230965290">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17314">创业问诊（公司名称查询-含香港）</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥1.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="weak red-redeem">1.00元</p>
-
-                                    </td>
-                                    <td>
-                                        <p class="primary">¥0.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">待确认</p>
-
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110768230965290" target="_blank" _stat_click_id="6_1" data-id="2017110768230965290">查看订单</a></p>
-
-                                        <p class="primary-weak" _stat_click_id="6_3" _so_status="2"><a class="act-link jmod_canNref_order" href="javascript:;" data-id="2017110768230965290">取消订单</a></p>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderPendingPay" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110738239067287">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-07 17:58:29 <span class="order-number">订单号 2017110738239067287</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17666">创业问诊（公司名称查询）</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥1.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak">无</p><p>
-
-                                    </p></td>
-                                    <td>
-                                        <p class="primary">¥1.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">待付款</p>
-
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110738239067287" target="_blank" _stat_click_id="6_1" data-id="2017110738239067287">查看订单</a></p>
-
-                                        <p><a href="/order/detail?so_id=2017110738239067287" _stat_click_id="6_2" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;" data-id="2017110738239067287">立即付款</a></p>
-
-
-
-                                        <p class="primary-weak" _stat_click_id="6_3" _so_status="1"><a class="act-link jmod_cancel_order" href="javascript:;" data-id="2017110738239067287">取消订单</a></p>
-
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderPendingConfirm" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110756234163447">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-07 00:05:13 <span class="order-number">订单号 2017110756234163447</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17314">创业问诊（公司名称查询-含香港）</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥1.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="weak red-redeem">1.00元</p>
-
-                                    </td>
-                                    <td>
-                                        <p class="primary">¥0.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">待确认</p>
-
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110756234163447" target="_blank" _stat_click_id="6_1" data-id="2017110756234163447">查看订单</a></p>
-
-                                        <p class="primary-weak" _stat_click_id="6_3" _so_status="2"><a class="act-link jmod_canNref_order" href="javascript:;" data-id="2017110756234163447">取消订单</a></p>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderPendingDeliver" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110656230267430">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-06 23:55:20 <span class="order-number">订单号 2017110656230267430</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17666">创业问诊（公司名称查询）</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥1.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak">无</p><p>
-
-                                    </p></td>
-                                    <td>
-                                        <p class="primary">¥1.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">已取消</p>
-
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110656230267430" target="_blank" _stat_click_id="6_1" data-id="2017110656230267430">查看订单</a></p>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderPendingCheck" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110646233666438">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-06 23:54:23 <span class="order-number">订单号 2017110646233666438</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17666">创业问诊（公司名称查询）</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥1.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak">无</p><p>
-
-                                    </p></td>
-                                    <td>
-                                        <p class="primary">¥1.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">待付款</p>
-
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110646233666438" target="_blank" _stat_click_id="6_1" data-id="2017110646233666438">查看订单</a></p>
-
-                                        <p><a href="/order/detail?so_id=2017110646233666438" _stat_click_id="6_2" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;" data-id="2017110646233666438">立即付款</a></p>
-                                        <p class="primary-weak" _stat_click_id="6_3" _so_status="1"><a class="act-link jmod_cancel_order" href="javascript:;" data-id="2017110646233666438">取消订单</a></p>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderPendingEvaluate" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="ui-table theme-1 table-mall table-order table-order-c">
-                            <table _so_id="2017110636239367428">
-                                <colgroup>
-                                    <col class="col-service-content">
-                                    <col class="col-price">
-                                    <col class="col-quantity">
-                                    <col class="col-redeem">
-                                    <col class="col-actual-price">
-                                    <col class="col-status">
-                                    <col class="col-opt">
-                                </colgroup>
-                                <tbody>
-                                <tr class="lite-head">
-                                    <td colspan="7">订单提交时间  2017-11-06 23:38:59 <span class="order-number">订单号 2017110636239367428</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cell-name">
-                                        <p class="primary"><a href="/cmdty/detail?csId=17272">编辑器工具-在线PS工具</a></p>
-                                        <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
-                                        <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
-                                    </td>
-                                    <td class="cell-price">
-
-
-                                        <p class="primary">¥10.00</p>
-
-                                    </td>
-                                    <td class="cell-quantity">
-                                        <p class="weak">1</p>
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak">无</p><p>
-
-                                    </p></td>
-                                    <td>
-                                        <p class="primary">¥10.00</p>
-                                    </td>
-                                    <td>
-                                        <p class="primary-weak" style="color:#323232;">待付款</p>
-
-                                    </td>
-                                    <td>
-
-                                        <p class="primary-weak"><a class="act-link" href="/order/detail?so_id=2017110636239367428" target="_blank" _stat_click_id="6_1" data-id="2017110636239367428">查看订单</a></p>
-
-                                        <p><a href="/order/detail?so_id=2017110636239367428" _stat_click_id="6_2" class="ui-button ui-button-sm ui-button-suc jmod_pay_order" style="color:#fff;" data-id="2017110636239367428">立即付款</a></p>
-
-                                        <p class="primary-weak" _stat_click_id="6_3" _so_status="1"><a class="act-link jmod_cancel_order" href="javascript:;" data-id="2017110636239367428">取消订单</a></p>
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content-orderCompleted" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-orderPendingCanceled" style="display: none">
+                            <div class="tab-content jmod_result_wrap">
+                                <div class="ui-table-hd all-thead table-order-c">
+                                    <span class="col-service-content">订单内容</span>
+                                    <span class="col-price">单价</span>
+                                    <span class="col-quantity">数量</span>
+                                    <span class="col-redeem">优惠</span>
+                                    <span class="col-actual-price">实付价</span>
+                                    <span class="col-status">订单状态</span>
+                                    <span class="col-opt">订单操作</span>
+                                </div>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-table theme-1 table-mall table-order table-order-c">
+                                <table>
+                                    <colgroup>
+                                        <col class="col-service-content">
+                                        <col class="col-price">
+                                        <col class="col-quantity">
+                                        <col class="col-redeem">
+                                        <col class="col-actual-price">
+                                        <col class="col-status">
+                                        <col class="col-opt">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr class="lite-head">
+                                        <td colspan="7">订单提交时间  2017-11-07 18:13:10 <span class="order-number">订单号 2017110768230965290</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-name">
+                                            <p class="primary"><a href="">创业问诊（公司名称查询-含香港）</a></p>
+                                            <p class="weak"><span class="lite-tit">服务地区</span>福建-厦门</p>
+                                            <p class="weak"><span class="lite-tit">服务期限</span>一次性</p>
+                                        </td>
+                                        <td class="cell-price">
+                                            <p class="primary">¥1.00</p>
+                                        </td>
+                                        <td class="cell-quantity">
+                                            <p class="weak">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="weak red-redeem">1.00元</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary">¥0.00</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak" style="color:#323232;">待确认</p>
+                                        </td>
+                                        <td>
+                                            <p class="primary-weak"><a class="act-link" href="" target="_blank">查看订单</a></p>
+                                            <p class="primary-weak"><a class="act-link jmod_canNref_order" href="javascript:;">取消订单</a></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="ui-pagination jmod_page_wrap">
+                                <div class="ui-pagination-wrap">
+                                    <ul class="ui-pagination-list">
+                                        <li class="ui-pagination-item actived">1</li>
+                                    </ul>
+                                    <div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div>
+                                    <div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="ui-pagination jmod_page_wrap"><div class="ui-pagination-wrap"><ul class="ui-pagination-list"><li class="ui-pagination-item actived">1</li></ul><div class="ui-pagination-sum">共<span class="ui-pagination-total">1</span>页 ,</div><div class="ui-pagination-goto">到第<input type="text" value="1">页<input type="button" value="确定"></div></div></div>
                 </div>
             </div>
         </div>
-    </div>
-
     <!--底部固定内容-start-->
     <div class="mod-footer-prom dark-theme">
         <div class="layout">
@@ -731,13 +1335,25 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
-    <!--<script>
-        var G_DATA = {
-            "isCorp": "0"
-        };
-        var pageId = 6009;
-    </script>
-    <script src="js/myProject.list.entry.js"></script>-->
+        <script type="text/javascript">
+            $(function(){
+                projectList.init();
+            })
+            var projectList = {
+                init:function(){
+                    this.event.tabSwitch();
+                },
+                event:{
+                    tabSwitch:function(){
+                        $("body").on("click", '.mod-tab-panel .tab-item', function (i) {
+                            var t = $(i.currentTarget);
+                            t.addClass("cur").siblings().removeClass("cur");
+                            $(".mod-tab-content>div:eq(" + t.index() + ")").show().siblings().hide();
+                        })
+                    }
+                }
+            }
+        </script>
     <!-- javascript code end -->
 
 </body>

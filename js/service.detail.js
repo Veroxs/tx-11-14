@@ -1,6 +1,4 @@
 var pageId = 6003;
-var DOMAINNAME = "//" + "c.qq.com" || location.host;
-var STATICDOMAIN = "//" + "qzs.qq.com";
 var G_DATA = {
     "nowTime": "1510040540",
     "serverInfo": {

@@ -450,10 +450,6 @@
     color: #fff
 }
 
-.mod-hotrecommend-card:first-child {
-    margin-left: 0
-}
-
 .mod-boxhd {
     position: relative;
     padding-left: 12px;
@@ -1219,4 +1215,13 @@
     font-size: 12px;
     line-height: 20px;
     padding: 2px 4px
+}
+
+/*add style*/
+.mod-hotrecommend-list {
+    margin-top: 0;
+    margin-left: -16px;
+}
+.hs-card, .mod-hotrecommend-card{
+    margin-top: 16px;
 }
