@@ -280,17 +280,17 @@
                 </div>
                 <div class="main">
                     <div class="mod-tab-panel">
-                        <div class="tab-item cur" data-status="0"><span class="item-in">公司简介</span></div>
-                        <div class="tab-item" data-status="2"><span class="item-in">业务介绍</span></div>
-                        <div class="tab-item" data-status="3"><span class="item-in">服务案例</span></div>
+                        <div class="tab-item j-tabItem cur" data-status="0"><span class="item-in">公司简介</span></div>
+                        <div class="tab-item j-tabItem" data-status="2"><span class="item-in">业务介绍</span></div>
+                        <div class="tab-item j-tabItem" data-status="3"><span class="item-in">服务案例</span></div>
                     </div>
                     <div class="mod-white-box mod-tab-content">
-                        <div class="tab-content">
+                        <div class="tab-content" id="j-tabContent">
                             <div class="tab-content-item">
                                 <div class="mod-form">
                                         <div class="mod-form-bd">
                                             <div class="mod-form-row">
-                                                <div class="mod-form-tit">
+                                                <div class="mod-form-tit" style="width: 120px">
                                                     <label>内容详情</label>
                                                     <span class="require">*</span>
                                                 </div>
@@ -310,11 +310,11 @@
 
                                 </div>
                             </div>
-                            <div class="ui-pagination" style="display: none;">
-                                <p>抱歉，没有相关的内容。</p>
+                            <div class="tab-content-item" style="display: none;">
+                                <p>抱歉，没有相关的内容111。</p>
                             </div>
-                            <div class="mod-empty" style="display: none;">
-                                <p>抱歉，没有相关的内容。</p>
+                            <div class="tab-content-item" style="display: none;">
+                                <p>抱歉，没有相关的内容222。</p>
                             </div>
                         </div>
                     </div>
@@ -422,7 +422,11 @@
     <!--公用js-end-->
    <script type="text/javascript">
        $(function(){
-
+           $("body").on("click", '.j-tabItem', function (i) {
+               var t = $(i.currentTarget);
+               t.addClass("cur").siblings().removeClass("cur");
+               $("#j-tabContent>div:eq(" + t.index() + ")").show().siblings().hide();
+           })
        })
    </script>
     <!-- javascript code end -->

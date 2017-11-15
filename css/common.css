@@ -1488,7 +1488,9 @@ select.select {
     width: auto;
     font-size: 14px;
     line-height: 20px;
-    padding: 9px 25px 9px 12px
+    padding: 9px 25px 9px 12px;
+    border: 1px solid #e2e2e2;
+    outline: none;
 }
 
 .ui-select {
@@ -1889,7 +1891,7 @@ button, input, select, textarea {
     cursor: default;
     -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .layout {

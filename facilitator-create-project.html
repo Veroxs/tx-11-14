@@ -266,13 +266,11 @@
                 <div class="mod-form-cont">
                     <div class="mod-form-col">
                         <div class="ui-input count default-w">
-                            <input type="text" name="p_name" placeholder="请填写用户熟知的项目或产品名称" validate="true"
-                                   validate_type="empty|jsLength" cant_empty="1" maxlen="10" maxlength="10"
-                                   validate_tip="请填写项目名称|1-10个字" value=""/>
+                            <input type="text" name="p_name" placeholder="请填写用户熟知的项目或产品名称" maxlength="10"
+                                   value=""/>
                             <div class="ui-input-bg"></div>
-                            <label class="ui-input-count"><i>0</i>/<i>10</i></label>
                         </div>
-                        <p class="input-tips err"></p>
+                        <p class="input-tips err" style="display: inline-block;">请填写项目名称</p>
                         <p class="input-tips suc"></p>
                     </div>
                 </div>
@@ -283,40 +281,15 @@
                 </div>
                 <div class="mod-form-cont">
                     <div class="mod-form-col">
-                        <select name="p_industry" class="select" validate="true" validate_type="empty"
-                                validate_tip="请选择">
+                        <select name="p_industry" class="select">
                             <option value="">请选择</option>
                             <option value="1">电子商务</option>
-                            <option value="2">社交</option>
-                            <option value="3">生活O2O</option>
-                            <option value="4">企业服务</option>
-                            <option value="5">教育培训</option>
-                            <option value="6">智能硬件</option>
-                            <option value="7">媒体资讯</option>
-                            <option value="8">广告营销</option>
-                            <option value="9">健康医疗</option>
-                            <option value="10">房产家居</option>
-                            <option value="11">汽车交通</option>
-                            <option value="12">金融</option>
-                            <option value="13">游戏</option>
-                            <option value="14">工具软件</option>
-                            <option value="15">旅游</option>
-                            <option value="16">影视娱乐</option>
-                            <option value="17">体育运动</option>
-                            <option value="18">文化艺术</option>
-                            <option value="19">安全</option>
-                            <option value="20">数据</option>
-                            <option value="21">创业者服务</option>
-                            <option value="22">机器人</option>
-                            <option value="23">农业</option>
-                            <option value="1000">其他</option>
                         </select>
                         <p class="input-tips err"></p>
                         <p class="input-tips suc"></p>
                     </div>
                     <div class="mod-form-col">
-                        <select name="p_industry" class="select" validate="true" validate_type="empty"
-                                validate_tip="请选择">
+                        <select name="p_industry" class="select">
                             <option value="">请选择</option>
                             <option value="1">电子商务</option>
                             <option value="1000">其他</option>
@@ -325,8 +298,7 @@
                         <p class="input-tips suc"></p>
                     </div>
                     <div class="mod-form-col">
-                        <select name="p_industry" class="select" validate="true" validate_type="empty"
-                                validate_tip="请选择">
+                        <select name="p_industry" class="select">
                             <option value="">请选择</option>
                             <option value="1">电子商务</option>
                             <option value="1000">其他</option>
@@ -343,38 +315,104 @@
                 <div class="mod-form-cont">
                     <div class="mod-form-col mb">
                         <div class="ui-input count">
-                            <input type="text" validate="true" value="一次性价格" disabled>
+                            <input type="text" value="一次性价格" disabled>
                             <div class="ui-input-bg"></div>
                         </div>
                         <label class="text">-</label>
                         <div class="ui-input count">
-                            <input type="text" validate="true" value="">
+                            <input type="text" value="">
                             <div class="ui-input-bg"></div>
                         </div>
                         <span class="span-text">元</span>
                         <div class="ui-checkbox ml mr display">
-                            <input type="checkbox" id="checkbox-st1" name="c_service_time" validate="true"
-                                   validate_type="empty" validate_tip="请选择需要的价格" checked="">
+                            <input type="checkbox" id="checkbox-st1" checked="">
                             <label for="checkbox-st1" class="ui-checkbox-rect checked"></label>
                             <label for="checkbox-st1" class="ui-checkbox-text"></label>
                         </div>
                     </div>
                     <div class="mod-form-col mb">
                         <div class="ui-input count">
-                            <input type="text" validate="true" value="一年价格" disabled>
+                            <input type="text" value="1个月价格" disabled>
                             <div class="ui-input-bg"></div>
                         </div>
                         <label class="text">-</label>
                         <div class="ui-input count">
-                            <input type="text" validate="true" value="">
+                            <input type="text" value="200">
                             <div class="ui-input-bg"></div>
                         </div>
                         <span class="span-text">元</span>
                         <div class="ui-checkbox ml mr display">
-                            <input type="checkbox" id="checkbox-st2" name="c_service_time" validate="true"
-                                   validate_type="empty" validate_tip="请选择需要的价格" checked="">
+                            <input type="checkbox" id="checkbox-st2" checked="">
                             <label for="checkbox-st2" class="ui-checkbox-rect"></label>
                             <label for="checkbox-st2" class="ui-checkbox-text"></label>
+                        </div>
+                    </div>
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" value="3个月价格" disabled>
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" value="200">
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st3" checked="">
+                            <label for="checkbox-st3" class="ui-checkbox-rect"></label>
+                            <label for="checkbox-st3" class="ui-checkbox-text"></label>
+                        </div>
+                    </div>
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" value="6个月价格" disabled>
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" value="200">
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st4" checked="">
+                            <label for="checkbox-st4" class="ui-checkbox-rect"></label>
+                            <label for="checkbox-st4" class="ui-checkbox-text"></label>
+                        </div>
+                    </div>
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" value="9个月价格" disabled>
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" value="200">
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st5" checked="">
+                            <label for="checkbox-st5" class="ui-checkbox-rect"></label>
+                            <label for="checkbox-st5" class="ui-checkbox-text"></label>
+                        </div>
+                    </div>
+                    <div class="mod-form-col mb">
+                        <div class="ui-input count">
+                            <input type="text" value="1年价格" disabled>
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <label class="text">-</label>
+                        <div class="ui-input count">
+                            <input type="text" value="200">
+                            <div class="ui-input-bg"></div>
+                        </div>
+                        <span class="span-text">元</span>
+                        <div class="ui-checkbox ml mr display">
+                            <input type="checkbox" id="checkbox-st6" checked="">
+                            <label for="checkbox-st6" class="ui-checkbox-rect"></label>
+                            <label for="checkbox-st6" class="ui-checkbox-text"></label>
                         </div>
                     </div>
                     <br>
@@ -400,11 +438,9 @@
                 </div>
                 <div class="mod-form-cont">
                     <div class="mod-form-col">
-
-                        <div id="div1">
+                        <div id="div-textarea" class="div-textarea">
                             <p>富文本编辑器</p>
                         </div>
-
                         <p class="input-tips err"></p>
                         <p class="input-tips suc"></p>
                     </div>
@@ -413,10 +449,10 @@
         </div>
     </div>
 </div>
-<div class="mod-opt">
+<div class="mod-opt pos-fixed">
     <div class="inner">
         <div class="layout">
-            <a href="javascript:;" data-type="1" _stat_click_id="6_1" class="ui-button">保存</a>
+            <a href="javascript:;" class="ui-button">保存</a>
         </div>
     </div>
 </div>
@@ -519,12 +555,26 @@
 <script src="js/fixed-bar.js"></script>
 <!--公用js-end-->
 <script src="js/wangEditor.js"></script>
-<script src="js/facilitator.create.project.js"></script>
-<script src="js/facilitator.create.project.entry.js"></script>
 <script type="text/javascript">
-    var E = window.wangEditor
-    var editor = new E('#div1')
-    editor.create();
+    $(function(){
+        //初始化富文本編輯器
+        var E = window.wangEditor
+        var editor = new E('#div-textarea')
+        editor.create();
+        creatProject.init();
+    })
+    var creatProject = {
+        init:function(){
+            this.event.checkboxChange();
+        },
+        event:{
+            checkboxChange:function(){
+                $('body').on('change','input[type="checkbox"]',function(){
+                    $(this).next().toggleClass('checked');
+                })
+            }
+        }
+    }
 </script>
 <!-- javascript code end -->
 

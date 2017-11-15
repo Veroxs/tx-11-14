@@ -1376,7 +1376,7 @@ a.ui-date-confirm:hover, a.ui-date-now-time:hover {
 .mod-opt {
     position: relative;
     height: 78px;
-    z-index: 300
+    z-index: 10001;
 }
 
 .mod-opt.pos-fixed .inner {
@@ -1402,7 +1402,7 @@ a.ui-date-confirm:hover, a.ui-date-now-time:hover {
     left: 0;
     bottom: 0;
     text-align: center;
-    padding: 16px 0
+    padding: 16px 0;
 }
 
 .mod-opt .inner:before {
@@ -1775,4 +1775,13 @@ a.ui-date-confirm:hover, a.ui-date-now-time:hover {
     line-height: 40px;
     padding: 0 5px;
     color: #878787;
+}
+
+.ui-checkbox {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: 3px;
+}
+.div-textarea{
+    z-index: 0;
 }

@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <!--顶部固定内容-start-->
     <div class="mod-topbar" id="jmod_topbar">
         <div class="layout clearfix">
@@ -255,15 +254,6 @@
     </div>
     <!--顶部固定内容-end-->
 
-    <!--标题-->
-    <div class="mod-form-big-title">
-        <div class="layout">
-            <div class="mod-big-title">
-                <h4 class="caption">服务商入驻</h4>
-                <p class="intro">成为腾讯众创空间服务商，服务于数百万创业企业和开发者，共享海量订单，获得绝佳品牌推广机会</p>
-            </div>
-        </div>
-    </div>
     <!--基础信息-->
     <div class="mod-form jmod-basic-info">
         <div class="layout">
@@ -277,90 +267,26 @@
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col jmod_c_logo">
-                            <div class="ui-file mr done" style="display:none;">
-                                <img src="">
-                                <div class="ui-file-opt">
-                                    <ul class="ui-file-btns item2">
-                                        <li class="btn origin" title="查看原图">
-                                            <a href="" target="_blank"><i></i><b>查看原图</b></a>
-                                        </li>
-                                        <li class="btn exchange" title="替换">
-                                            <label for="c_logo_input"><i></i><b>替换</b></label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="ui-file mr upload">
-                                <label for="c_logo_input" class="ui-file-add"></label>
-                            </div>
-
-                            <div class="ui-file mr process" style="display:none;">
-                                <span class="ui-file-preload"></span>
-                            </div>
-                            <input type="text" class="hidden" _type="file" name="c_logo" validate="true"
-                                   validate_type="empty" validate_tip="请上传公司LOGO" value="">
-                            <div class="fileinput-button">
-                                <input id="c_logo_input" type="file" name="file" class="ui-file-input">
+                                <label for="" class="ui-file-add"></label>
                             </div>
                             <span class="input-tips err hidden">您的输入有误</span>
                         </div>
                         <div class="mod-form-col block-el">
-                            <p class="more-tips font-sm">支持JPG、PNG格式，文件小于5M，建议尺寸300x300</p>
+                            <p class="more-tips font-sm">1.建议图片尺寸为512*512像素</p>
+                            <p class="more-tips font-sm">2.支持JPG、PNG格式，文件不超过5M</p>
                         </div>
                     </div>
                 </div>
                 <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>公司全称<span class="require">*</span></label>
+                        <label>公司名称<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
                             <div class="ui-input count">
-                                <input class="default-input-width" name="c_full_name" placeholder="请填写公司全称，例如：科技（北京）有限公司"
-                                       validate="true" validate_type="empty|jsLength" maxlength="50" maxlen="50" minlen="1"
-                                       validate_tip="请填写公司全称|1-50个字" value="">
+                                <input class="default-input-width" placeholder="" maxlength="50" minlen="1" value="">
                                 <div class="ui-input-bg"></div>
-                                <label class="ui-input-count">
-                                    <i>0</i>/<i>50</i>
-                                </label>
-                            </div>
-                            <span class="input-tips err hidden">您的输入有误</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>公司简称<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-input count">
-                                <input class="default-input-width" name="c_name" placeholder="请填写简称或品牌名称，对用户展示时将以此为主"
-                                       validate="true" validate_type="empty|jsLength" maxlength="10" maxlen="10" minlen="1"
-                                       validate_tip="请填写公司简称|1-10个字" value="">
-                                <div class="ui-input-bg"></div>
-                                <label class="ui-input-count">
-                                    <i>0</i>/<i>10</i>
-                                </label>
-                            </div>
-                            <span class="input-tips err hidden">您的输入有误</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>公司简介<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-textarea count default-input-width">
-                                <textarea name="c_brief" rows="4" validate="true" validate_type="empty|jsLength"
-                                          maxlength="100" maxlen="100" minlen="1" placeholder="请填写公司简介"
-                                          validate_tip="请填写公司简介|1-100个字"></textarea>
-                                <div class="ui-textarea-bg"></div>
-                                <label class="ui-textarea-count">
-                                    <i>0</i>/<i>100</i>
-                                </label>
                             </div>
                             <span class="input-tips err hidden">您的输入有误</span>
                         </div>
@@ -372,264 +298,77 @@
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <select name="c_business_type" class="select" validate="true" validate_type="empty"
-                                    validate_tip="请选择行业类型" style="display: none;">
-                                <option value="">请选择行业类型</option>
-
-                                <option value="100000">法律服务</option>
-
-                                <option value="100001">财税服务</option>
-
-                                <option value="100002">知识产权</option>
-
-                                <option value="" disabled="" class="disabled">其他类目暂未开放</option>
+                            <select name="p_industry" class="select">
+                                <option value="">请选择</option>
+                                <option value="1">电子商务</option>
                             </select>
-                            <div class="select ui-select" style="width: 187px;"><a href="javascript:void(0);"
-                                                                                   class="ui-select-button"><span
-                                    class="ui-select-text">请选择行业类型</span><i class="ui-select-icon"></i></a>
-                                <ul class="ui-select-datalist">
-                                    <li class="ui-select-li  selected" data-index="0">请选择行业类型</li>
-                                    <li class="ui-select-li " data-index="1">法律服务</li>
-                                    <li class="ui-select-li " data-index="2">财税服务</li>
-                                    <li class="ui-select-li " data-index="3">知识产权</li>
-                                    <li class="ui-select-li disabled disabled" data-index="17">其他类目暂未开放</li>
-                                </ul>
-                            </div>
                             <span class="input-tips err hidden">您的输入有误</span>
                         </div>
                     </div>
                 </div>
                 <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>业务介绍<span class="require">*</span></label>
+                        <label>法人姓名<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-textarea default-input-width count">
-                                <textarea name="c_business_introduce" rows="4" validate="true"
-                                          validate_type="empty|jsLength" maxlength="100" maxlen="100" minlen="1"
-                                          placeholder="请填写业务补充介绍，例如：公司主营XXXXXX" validate_tip="请填写业务介绍|1-100个字"></textarea>
-                                <div class="ui-textarea-bg"></div>
-                                <label for="textarea2" class="ui-textarea-count">
-                                    <i>0</i>/<i>100</i>
-                                </label>
-                            </div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>服务案例<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-textarea default-input-width count">
-                                <textarea name="c_cooperation_case" rows="4" validate="true" validate_type="empty|jsLength"
-                                          maxlength="100" maxlen="100" minlen="1" placeholder="请填写过往服务案例"
-                                          validate_tip="请填写服务案例|1-100个字"></textarea>
-                                <div class="ui-textarea-bg"></div>
-                                <label class="ui-textarea-count">
-                                    <i>0</i>/<i>100</i>
-                                </label>
-                            </div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>公司地址<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <select name="c_province_id" class="select mr jmod_select_province" validate="true"
-                                    validate_type="empty" validate_tip="请选择公司地址" style="display: none;">
-                                <option value="">请选择省份</option>
-
-                                <option value="100000">北京</option>
-
-                                <option value="100020">天津</option>
-
-                                <option value="100040">河北</option>
-
-                                <option value="100053">山西</option>
-
-                                <option value="100066">内蒙古</option>
-
-                                <option value="100080">辽宁</option>
-
-                                <option value="100096">吉林</option>
-
-                                <option value="100107">黑龙江</option>
-
-                                <option value="100122">上海</option>
-
-                                <option value="100143">江苏</option>
-
-                                <option value="100158">浙江</option>
-
-                                <option value="100171">安徽</option>
-
-                                <option value="100190">福建</option>
-
-                                <option value="100201">江西</option>
-
-                                <option value="100214">山东</option>
-
-                                <option value="100233">河南</option>
-
-                                <option value="100253">湖北</option>
-
-                                <option value="100272">湖南</option>
-
-                                <option value="100288">广东</option>
-
-                                <option value="100311">广西</option>
-
-                                <option value="100327">海南</option>
-
-                                <option value="100350">重庆</option>
-
-                                <option value="100392">四川</option>
-
-                                <option value="100415">贵州</option>
-
-                                <option value="100426">云南</option>
-
-                                <option value="100444">西藏</option>
-
-                                <option value="100453">陕西</option>
-
-                                <option value="100465">甘肃</option>
-
-                                <option value="100481">青海</option>
-
-                                <option value="100491">宁夏</option>
-
-                                <option value="100498">新疆</option>
-
-                                <option value="100518">台湾</option>
-
-                                <option value="100543">香港</option>
-
-                                <option value="100545">澳门</option>
-
-                                <option value="100547">其它</option>
-
-                            </select>
-                            <div class="select mr jmod_select_province ui-select" style="width: 131px;"><a
-                                    href="javascript:void(0);" class="ui-select-button"><span
-                                    class="ui-select-text">请选择省份</span><i class="ui-select-icon"></i></a>
-                                <ul class="ui-select-datalist">
-                                    <li class="ui-select-li  selected" data-index="0">请选择省份</li>
-                                    <li class="ui-select-li " data-index="1">北京</li>
-                                    <li class="ui-select-li " data-index="2">天津</li>
-                                    <li class="ui-select-li " data-index="3">河北</li>
-                                    <li class="ui-select-li " data-index="4">山西</li>
-                                    <li class="ui-select-li " data-index="5">内蒙古</li>
-                                    <li class="ui-select-li " data-index="6">辽宁</li>
-                                    <li class="ui-select-li " data-index="7">吉林</li>
-                                    <li class="ui-select-li " data-index="8">黑龙江</li>
-                                    <li class="ui-select-li " data-index="9">上海</li>
-                                    <li class="ui-select-li " data-index="10">江苏</li>
-                                    <li class="ui-select-li " data-index="11">浙江</li>
-                                    <li class="ui-select-li " data-index="12">安徽</li>
-                                    <li class="ui-select-li " data-index="13">福建</li>
-                                    <li class="ui-select-li " data-index="14">江西</li>
-                                    <li class="ui-select-li " data-index="15">山东</li>
-                                    <li class="ui-select-li " data-index="16">河南</li>
-                                    <li class="ui-select-li " data-index="17">湖北</li>
-                                    <li class="ui-select-li " data-index="18">湖南</li>
-                                    <li class="ui-select-li " data-index="19">广东</li>
-                                    <li class="ui-select-li " data-index="20">广西</li>
-                                    <li class="ui-select-li " data-index="21">海南</li>
-                                    <li class="ui-select-li " data-index="22">重庆</li>
-                                    <li class="ui-select-li " data-index="23">四川</li>
-                                    <li class="ui-select-li " data-index="24">贵州</li>
-                                    <li class="ui-select-li " data-index="25">云南</li>
-                                    <li class="ui-select-li " data-index="26">西藏</li>
-                                    <li class="ui-select-li " data-index="27">陕西</li>
-                                    <li class="ui-select-li " data-index="28">甘肃</li>
-                                    <li class="ui-select-li " data-index="29">青海</li>
-                                    <li class="ui-select-li " data-index="30">宁夏</li>
-                                    <li class="ui-select-li " data-index="31">新疆</li>
-                                    <li class="ui-select-li " data-index="32">台湾</li>
-                                    <li class="ui-select-li " data-index="33">香港</li>
-                                    <li class="ui-select-li " data-index="34">澳门</li>
-                                    <li class="ui-select-li " data-index="35">其它</li>
-                                </ul>
-                            </div>
-                            <select name="c_city_id" class="select jmod_select_city" validate="true" validate_type="empty"
-                                    validate_tip="请选择公司地址" style="display: none;">
-                                <option value="">请选择城市</option>
-
-                            </select>
-                            <div class="select jmod_select_city ui-select" style="width: 131px;"><a
-                                    href="javascript:void(0);" class="ui-select-button"><span
-                                    class="ui-select-text">请选择城市</span><i class="ui-select-icon"></i></a>
-                                <ul class="ui-select-datalist">
-                                    <li class="ui-select-li  selected" data-index="0">请选择城市</li>
-                                </ul>
-                            </div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-                        </div>
-                        <div class="mod-form-col mt block-el">
                             <div class="ui-input count">
-                                <input class="default-input-width" maxlength="50" name="c_addr" validate="true"
-                                       validate_type="empty|jsLength" maxlen="50" minlen="1" validate_tip="请填写详细地址|1-50个字"
-                                       value="" placeholder="请填写公司详细联系地址">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
-                                <label class="ui-input-count">
-                                    <i>0</i>/<i>50</i>
-                                </label>
                             </div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
                         </div>
                     </div>
                 </div>
                 <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>人员规模<span class="require">*</span></label>
+                        <label>性别</label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <select name="c_team_scale" class="select" validate="true" validate_type="empty"
-                                    validate_tip="请选择人员规模" style="display: none;">
-                                <option value="">请选择人员规模</option>
-
-                                <option value="1">1-49</option>
-
-                                <option value="2">50-99</option>
-
-                                <option value="3">100-499</option>
-
-                                <option value="4">500-999</option>
-
-                                <option value="5">1000人以上</option>
-
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder="" value="">
+                                <div class="ui-input-bg"></div>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>法人身份证正反面<span class="require">*</span></label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col jmod_c_logo">
+                            <div class="ui-file mr upload">
+                                <label for="" class="ui-file-add"></label>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
+                        </div>
+                        <div class="mod-form-col block-el">
+                            <p class="more-tips font-sm">1.建议图片尺寸为512*512像素</p>
+                            <p class="more-tips font-sm">2.支持JPG、PNG格式，文件不超过5M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>所在城市<span class="require">*</span></label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col">
+                            <select class="select mr">
+                                <option value="">请选择省份</option>
+                                <option value="100000">北京</option>
                             </select>
-                            <div class="select ui-select" style="width: 159px;"><a href="javascript:void(0);"
-                                                                                   class="ui-select-button"><span
-                                    class="ui-select-text">请选择人员规模</span><i class="ui-select-icon"></i></a>
-                                <ul class="ui-select-datalist">
-                                    <li class="ui-select-li  selected" data-index="0">请选择人员规模</li>
-                                    <li class="ui-select-li " data-index="1">1-49</li>
-                                    <li class="ui-select-li " data-index="2">50-99</li>
-                                    <li class="ui-select-li " data-index="3">100-499</li>
-                                    <li class="ui-select-li " data-index="4">500-999</li>
-                                    <li class="ui-select-li " data-index="5">1000人以上</li>
-                                </ul>
-                            </div>
-
+                            <select class="select mr">
+                                <option value="">请选择市区</option>
+                                <option value="100000">北京</option>
+                            </select>
+                            <select class="select mr">
+                                <option value="">请选择县</option>
+                                <option value="100000">北京</option>
+                            </select>
                             <span class="input-tips err hidden">您的输入有误</span>
 
                         </div>
@@ -637,19 +376,57 @@
                 </div>
                 <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>公司网站<span class="require">*</span></label>
+                        <label>联系方式<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-input default-input-width">
-                                <input id="c_website" name="c_website" placeholder="http://" validate="true"
-                                       validate_type="empty|legal" legal_type="fullUrl" maxlength="50"
-                                       validate_tip="请填写公司网站|格式错误" value="">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
                             </div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>紧急联系人<span class="require">*</span></label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
+                                <div class="ui-input-bg"></div>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>紧急联系电话<span class="require">*</span></label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
+                                <div class="ui-input-bg"></div>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>邮箱<span class="require">*</span></label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
+                                <div class="ui-input-bg"></div>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
                         </div>
                     </div>
                 </div>
@@ -660,59 +437,65 @@
     <div class="mod-form jmod-register-info">
         <div class="layout">
             <div class="mod-form-hd">
-                <h4 class="caption">公司注册信息</h4>
+                <h4 class="caption">企业信息</h4>
             </div>
             <div class="mod-form-body jmod_all_form">
                 <div class="mod-form-row">
                     <div class="mod-form-tit">
-                        <label>成立时间<span class="require">*</span></label>
+                        <label>营业执照副本<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-date-input">
-                                <input name="c_establish_time" type="date" validate="true" validate_type="empty"
-                                       validate_tip="请填写注册时间" value="" readonly="" id="date7796606067150729"><label
-                                    for="date7796606067150729" class="ui-date-arrow"></label>
-                                <label class="ui-date-arrow"></label>
+                        <div class="mod-form-col jmod_c_logo">
+                            <div class="ui-file mr upload">
+                                <label for="" class="ui-file-add"></label>
                             </div>
-                            <span class="input-tips err hidden" style="display: none;"><span>大于当前时间</span></span>
+                            <span class="input-tips err hidden">您的输入有误</span>
+                        </div>
+                        <div class="mod-form-col block-el">
+                            <p class="more-tips font-sm">1.建议图片尺寸为512*512像素</p>
+                            <p class="more-tips font-sm">2.支持JPG、PNG格式，文件不超过5M</p>
                         </div>
                     </div>
                 </div>
-                <div class="mod-form-row">
+                <div class="mod-form-row mt">
                     <div class="mod-form-tit">
                         <label>统一信用代码<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-input default-input-width">
-                                <input name="c_licence" placeholder="请填写营业执照注册号或统一社会信用代码" validate="true"
-                                       validate_type="empty|legal" legal_type="company_licence" maxlength="20"
-                                       validate_tip="请填写营业执照注册号|请填写营业执照注册号或统一社会信用代码" value="">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
                             </div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
                         </div>
                     </div>
                 </div>
-                <div class="mod-form-row">
+                <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>注册资本<span class="require">*</span></label>
+                        <label>注册资本</label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-input default-input-width">
-                                <input name="c_registered_capital" placeholder="请填写营业执照上的注册资本" validate="true"
-                                       validate_type="empty|legal" legal_type="num_positive" maxlength="10"
-                                       validate_tip="请填注册资本|注册资本为正整数" value="">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
                             </div>
-                            <span style="display:inline-block;line-height:21px;color:#999999;vertical-align: top;margin: 9px 0 0 4px;font-size:14px;">万元</span>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-form-row mt">
+                    <div class="mod-form-tit">
+                        <label>注册时间</label>
+                    </div>
+                    <div class="mod-form-cont">
+                        <div class="mod-form-col">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
+                                <div class="ui-input-bg"></div>
+                            </div>
+                            <span class="input-tips err hidden">您的输入有误</span>
                         </div>
                     </div>
                 </div>
@@ -722,277 +505,57 @@
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-input default-input-width">
-                                <input name="c_tax_certificate" placeholder="请填写税务登记证号（三证合一请再次填写）" validate="true"
-                                       validate_type="empty|legal" legal_type="tax_num" maxlength="20"
-                                       validate_tip="请填写税务登记证号|格式不正确" value="">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
                             </div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
                         </div>
                     </div>
                 </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>上一年度营业额<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-input default-input-width">
-                                <input name="c_taxpayer_id" placeholder="请填写纳税人识别号（三证合一请再次填写）" validate="true"
-                                       validate_type="empty|legal" legal_type="tax_num" maxlength="20"
-                                       validate_tip="请填写纳税人识别号|格式不正确" value="">
-                                <div class="ui-input-bg"></div>
-                            </div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>营业执照上传<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col jmod_c_license_pic">
-                            <div class="ui-file mr done" style="display:none;">
-                                <img src="">
-                                <div class="ui-file-opt">
-                                    <ul class="ui-file-btns item2">
-                                        <li class="btn origin" title="查看原图"><a href=""
-                                                                               target="_blank"><i></i><b>查看原图</b></a></li>
-                                        <li class="btn exchange" title="替换"><label
-                                                for="c_license_pic_input"><i></i><b>替换</b></label></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="ui-file mr upload">
-                                <label for="c_license_pic_input" class="ui-file-add"></label>
-                            </div>
-
-                            <div class="ui-file mr process" style="display:none;"><span class="ui-file-preload"></span>
-                            </div>
-                            <input type="text" class="hidden" _type="file" name="c_license_pic" validate="true"
-                                   validate_type="empty" validate_tip="请上传营业执照" value="">
-                            <div class="fileinput-button"><input id="c_license_pic_input" type="file" name="file"
-                                                                 class="ui-file-input"></div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-
-                        </div>
-                        <div class="mod-form-col block-el">
-                            <p class="more-tips font-sm">支持JPG、PNG格式，文件小于5M，请确保图片清晰</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>法人身份证正面<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col jmod_c_idcard_front_pic">
-                            <div class="ui-file mr done" style="display:none;">
-                                <img src="">
-                                <div class="ui-file-opt">
-                                    <ul class="ui-file-btns item2">
-                                        <li class="btn origin" title="查看原图"><a href=""
-                                                                               target="_blank"><i></i><b>查看原图</b></a></li>
-                                        <li class="btn exchange" title="替换"><label for="c_idcard_front_pic_input"><i></i><b>替换</b></label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="ui-file mr upload">
-                                <label for="c_idcard_front_pic_input" class="ui-file-add"></label>
-                            </div>
-
-                            <div class="ui-file mr process" style="display:none;"><span class="ui-file-preload"></span>
-                            </div>
-                            <input type="text" class="hidden" _type="file" name="c_idcard_front_pic" validate="true"
-                                   validate_type="empty" validate_tip="请上传法人身份证正面" value="">
-                            <div class="fileinput-button"><input id="c_idcard_front_pic_input" type="file" name="file"
-                                                                 class="ui-file-input"></div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-
-                        </div>
-                        <div class="mod-form-col block-el">
-                            <p class="more-tips font-sm">支持JPG、PNG格式，文件小于5M，请确保图片清晰</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>法人身份证反面<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col jmod_c_idcard_back_pic">
-                            <div class="ui-file mr done" style="display:none;">
-                                <img src="">
-                                <div class="ui-file-opt">
-                                    <ul class="ui-file-btns item2">
-                                        <li class="btn origin" title="查看原图"><a href=""
-                                                                               target="_blank"><i></i><b>查看原图</b></a></li>
-                                        <li class="btn exchange" title="替换"><label for="c_idcard_back_pic_input"><i></i><b>替换</b></label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="ui-file mr upload">
-                                <label for="c_idcard_back_pic_input" class="ui-file-add"></label>
-                            </div>
-
-                            <div class="ui-file mr process" style="display:none;"><span class="ui-file-preload"></span>
-                            </div>
-                            <input type="text" class="hidden" _type="file" name="c_idcard_back_pic" validate="true"
-                                   validate_type="empty" validate_tip="请上传法人身份证反面" value="">
-                            <div class="fileinput-button"><input id="c_idcard_back_pic_input" type="file" name="file"
-                                                                 class="ui-file-input"></div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-
-                        </div>
-                        <div class="mod-form-col block-el">
-                            <p class="more-tips font-sm">支持JPG、PNG格式，文件小于5M，请确保图片清晰</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mod-form-row mt">
+                <div class="mod-form-row">
                     <div class="mod-form-tit">
                         <label>年度审计报告<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
-                        <div class="mod-form-col jmod_c_tc_pic">
-                            <div class="ui-file mr done" style="display:none;">
-                                <img src="">
-                                <div class="ui-file-opt">
-                                    <ul class="ui-file-btns item2">
-                                        <li class="btn origin" title="查看原图"><a href=""
-                                                                               target="_blank"><i></i><b>查看原图</b></a></li>
-                                        <li class="btn exchange" title="替换"><label
-                                                for="c_tc_pic_input"><i></i><b>替换</b></label></li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                        <div class="mod-form-col jmod_c_logo">
                             <div class="ui-file mr upload">
-                                <label for="c_tc_pic_input" class="ui-file-add"></label>
+                                <label for="" class="ui-file-add"></label>
                             </div>
-
-                            <div class="ui-file mr process" style="display:none;"><span class="ui-file-preload"></span>
-                            </div>
-                            <input type="text" class="hidden" _type="file" name="c_tc_pic" validate="true"
-                                   validate_type="empty" validate_tip="请上年度审计报告" value="">
-                            <div class="fileinput-button"><input id="c_tc_pic_input" type="file" name="file"
-                                                                 class="ui-file-input"></div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
-
                         </div>
                         <div class="mod-form-col block-el">
-                            <p class="more-tips font-sm">支持JPG、PNG格式，文件小于5M，请确保图片清晰（三证合一请再次上传）</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--入驻联系人信息-->
-    <div class="mod-form jmod-contact-info">
-        <div class="layout">
-            <div class="mod-form-hd">
-                <h4 class="caption">入驻联系人信息<span class="remark">( 用于创业服务平台与申请人联系开展入驻接洽 )</span></h4>
-            </div>
-            <div class="mod-form-body jmod_all_form">
-                <div class="mod-form-row">
-                    <div class="mod-form-tit">
-                        <label>联系人姓名<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-input">
-                                <input class="default-input-width" name="c_contact_person"
-                                       placeholder="请填写接口联系人姓名，方便平台核实和联络 " validate="true" validate_type="empty"
-                                       maxlength="10" validate_tip="请填写联系人姓名" value="corey.zeng">
-                                <div class="ui-input-bg"></div>
-                            </div>
-
-                            <span class="input-tips err hidden">您的输入有误</span>
-
+                            <p class="more-tips font-sm">1.建议图片尺寸为512*512像素</p>
+                            <p class="more-tips font-sm">2.支持JPG、PNG格式，文件不超过5M</p>
                         </div>
                     </div>
                 </div>
                 <div class="mod-form-row mt">
                     <div class="mod-form-tit">
-                        <label>手机号<span class="require">*</span></label>
+                        <label>上一年度营业额</label>
                     </div>
                     <div class="mod-form-cont">
                         <div class="mod-form-col">
-                            <div class="ui-input">
-                                <input class="default-input-width" name="c_mobile" placeholder="" validate="true"
-                                       validate_type="empty|legal" legal_type="mobile_phone" maxlength="50"
-                                       validate_tip="请填写手机号码|请填写11位手机号码" value="13200020000">
+                            <div class="ui-input count">
+                                <input class="default-input-width" placeholder=""  value="">
                                 <div class="ui-input-bg"></div>
                             </div>
-
                             <span class="input-tips err hidden">您的输入有误</span>
-
                         </div>
                     </div>
                 </div>
-                <div class="mod-form-row mt">
-                    <div class="mod-form-tit">
-                        <label>邮箱<span class="require">*</span></label>
-                    </div>
-                    <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <div class="ui-input">
-                                <input class="default-input-width" name="c_email" placeholder="请填写有效邮箱，用于接收平台重要通知"
-                                       validate="true" validate_type="empty|legal" legal_type="email" maxlength="50"
-                                       validate_tip="请填写邮箱|邮箱格式不正确" value="">
-                                <div class="ui-input-bg"></div>
-                            </div>
 
-                            <span class="input-tips err hidden">您的输入有误</span>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="mod-terms-of-service jmod-agree-protocol">
-        <div class="layout">
-            <div class="item">
-                <div class="ui-checkbox">
-                    <input type="checkbox" id="agree" name="agree">
-                    <label for="agree" class="ui-checkbox-rect "></label>
-                    <label for="agree" class="ui-checkbox-text">同意
-                        <a href="javascript:void(0)" id="show-protocol">《2017年众创空间企业服务平台商户入驻协议》</a></label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mod-form-card-btnwrap mod-opt jmod-bottom-bar">
+    <div class="mod-opt pos-fixed">
         <div class="inner">
             <div class="layout">
-                <a href="javascript:void(0)" id="save" class="ui-button">保存</a>
-                <a href="javascript:void(0)" id="commit" class="ui-button ui-button-primary">提交资料</a>
+                <a href="javascript:;" class="ui-button">确认修改</a>
             </div>
         </div>
     </div>
-    <div class="mod-addr-layer"></div>
 
     <!--底部固定内容-start-->
     <div class="mod-footer-prom dark-theme">
@@ -1092,18 +655,6 @@
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
 
-    <script>
-        var pageId = 6001;
-        var G_DATA = {
-            "c_contact_person": "corey.zeng",
-            "c_mobile": 13200020000,
-            "c_email": "",
-            "c_profile_status": 4,
-            "c_establish_year": "",
-            "c_establish_time": ""
-        };
-    </script>
-    <script src="js/facilitator.info.entry.js"></script>
     <!-- javascript code end -->
 
 </body>
