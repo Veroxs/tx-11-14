@@ -1,0 +1,645 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>服务详情</title>
+    <meta name="keywords" content="创业问诊（公司注册咨询） 企业服务 创业服务"/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--[if lt IE 9]>
+    <script src="js/es5-shim.min.js"></script>
+    <script src="js/es5-sham.min.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/page-service-detail.css">
+</head>
+<body>
+    <!--顶部固定内容-start-->
+    <div class="mod-topbar" id="jmod_topbar">
+        <div class="layout clearfix">
+            <div class="mod-topbar-links">
+                <a href="" class="mod-topbar-item" target="_blank">腾讯开放平台</a>
+                <a href="" class="mod-topbar-item" target="_blank">创业服务</a>
+                <a href="" class="mod-topbar-item" target="_blank">众创空间</a>
+                <a href="" class="mod-topbar-item" target="_blank">腾讯双百</a>
+            </div>
+            <div class="mod-topbar-right">
+                <div class="search mod-topbar-item">
+                    <div class="ui-search">
+                        <input type="text" class="jmod_search" placeholder="资料库/API搜索">
+                        <div class="ui-search-bg"></div>
+                        <a href="javascript:void(0);" class="ui-search-btn jmod_search_btn"></a>
+                    </div>
+                    <span class="close"></span>
+                    <span class="btn" id="jmod_search_btn">搜索</span>
+                </div>
+                <a href="" target="_blank" class="mod-topbar-item">管理中心</a>
+                <a href="" target="_blank" class="mod-topbar-item jmod-header-order">我的订单</a>
+                <a href="" target="_blank" class="mod-topbar-item">我的项目</a>
+                <a id="msgUnReadNum" href="" target="_blank" class="msg mod-topbar-item">消息</a>
+                <a href="javascript:void(0);" class="login mod-topbar-item jmod_login_btn">登录</a>
+                <div class="user mod-topbar-item jmod_nav_username" style="display: none;">
+                    <p class="name">
+                        <span id="navigationUserName"><a href="" target="_blank"></a></span>
+                        <i></i>
+                    </p>
+                    <div class="dropdown">
+                        <a id="navigationUserLogOut" style="display: inline-block; width: 100%;" href="javascript:void(0);">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mod-header">
+        <div class="layout clearfix">
+            <a href="" class="mod-header-logo"><img src="images/logo-cf-139cc3263a.png"></a>
+            <div class="mod-header-slogan">
+                <span class="item item-1">商家资质认证</span>
+                <span class="item item-2">需求闪电响应</span>
+                <span class="item item-3">平台交易担保</span>
+            </div>
+        </div>
+    </div>
+    <div id="jmod-nav-wrap" class="mod-nav">
+        <div class="layout">
+            <div class="mod-nav-item mod-nav-menu">
+                <h3 class="mod-nav-tit">服务分类<i class="arrow"></i></h3>
+                <ul class="mod-nav-list" id="jmod_nav_menu">
+                    <li>
+                        <p class="mod-nav-row ">
+                            <a target="_blank" href="">工商注册</a>
+                            <a target="_blank" href="">财税服务</a>
+                            <a target="_blank" href="">内容服务</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">工商注册</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">公司注册</a></li>
+                                <li><a href="" target="_blank">个人独资企业注册</a></li>
+                                <li><a href="" target="_blank">公司注册地址服务</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">财税服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">代理记账</a></li>
+                                <li><a href="" target="_blank"> 税务代办</a></li>
+                                <li><a href="" target="_blank">财务审计</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">内容服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">图文策划</a></li>
+                                <li><a href="" target="_blank">视频策划</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">知识产权</a>
+                            <a target="_blank" href="">资质办理</a>
+                            <a target="_blank" href="">法律服务</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">知识产权</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">商标注册</a></li>
+                                <li><a href="" target="_blank">加急商标注册</a></li>
+                                <li><a href="" target="_blank">海外商标注册</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">资质办理</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">ICP经营许可证</a></li>
+                                <li><a href="" target="_blank">网络文化经营许可证</a></li>
+                                <li><a href="" target="_blank">高新企业认证</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">法律服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">人事法律顾问</a></li>
+                                <li><a href="" target="_blank">电话问律师</a></li>
+                                <li><a href="" target="_blank">合同</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">微信服务</a>
+                            <a target="_blank" href="">软件开发</a>
+                            <a target="_blank" href="">APP开发</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">微信服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">公众号申请</a></li>
+                                <li><a href="" target="_blank">公众号认证</a></li>
+                                <li><a href="" target="_blank">微信支付开通</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">软件开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">云服务</a></li>
+                                <li><a href="" target="_blank">软件测试</a></li>
+                                <li><a href="" target="_blank">工具软件开发</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">APP开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">生活类</a></li>
+                                <li><a href="" target="_blank">工具类</a></li>
+                                <li><a href="" target="_blank">娱乐类</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row ">
+                            <a target="_blank" href="">人力资源</a>
+                            <a target="_blank" href="">社保服务</a>
+                            <a target="_blank" href="">企业管理</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">人力资源</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">通用能力培训</a></li>
+                                <li><a href="" target="_blank">人事咨询</a></li>
+                                <li><a href="" target="_blank">人才测评</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">社保服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">企业社保</a></li>
+                                <li><a href="" target="_blank">人事社保咨询</a></li>
+                                <li><a href="" target="_blank">公积金开户</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">企业管理</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">行政采购</a></li>
+                                <li><a href="" target="_blank">企业采购</a></li>
+                                <li><a href="" target="_blank">团队协作</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">视觉设计</a>
+                            <a target="_blank" href="">市场传播</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">视觉设计</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">商标设计</a></li>
+                                <li><a href="" target="_blank">PC页面设计</a></li>
+                                <li><a href="" target="_blank">APP设计</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">市场传播</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row last">
+                            <a target="_blank" href="">网站开发</a>
+                            <a target="_blank" href="">创业支持</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">网站开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">企业网站</a></li>
+                                <li><a href="" target="_blank">网页特效设计</a></li>
+                                <li><a href="" target="_blank">前端开发</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">创业支持</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">场地设备</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="mod-nav-item cur">首页</a>
+            <a href="" class="mod-nav-item">商家列表</a>
+        </div>
+    </div>
+    <!--顶部固定内容-end-->
+
+    <div class="mod-crumb jmod-breadcrumb">
+        <a href="/">首页</a> &gt;
+        <a href="/ListSku/view?firstCateId=100003">工商注册</a> &gt; <p class="crumb-name">公司注册</p> &gt; <a href="/ListSku/view?firstCateId=100003&amp;thirdCateId=100045">创业问诊</a> &gt; <p class="crumb-name">服务详情</p>
+    </div>
+    <div class="service-detail-header">
+        <div class="layout">
+            <div class="service-detail-banner">
+                <div class="leftside-content">
+                    <div class="top-wrap jmod-active-price">
+                        <div class="service-title">创业问诊（公司注册咨询）</div>
+                        <!-- normal -->
+                        <div class="price-board">
+                            <div class="price-board-b is-normal">
+                                <div class="price-board-spr">价格
+                                    <span class="price-board-p jmod_price_text"><small style="font-size:20px;">¥</small>1.88</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom-wrap jmod-select-ctrl">
+                        <div class="service-rest">
+                            <div class="service-region">
+                                <span class="rest-title">服务地区</span>
+                                <div class="ui-address choose-address ui-address-close">
+                                    <div class="ui-checkbox-wrap jmod_select_address">
+                                        <label for="add16" class="ui-checkbox-text jmod_address_text">选择服务地区</label><span class="ui-address-tri"><span class="ui-address-tri-icon"></span></span>
+                                    </div>
+                                    <div class="ui-address-layer">
+                                        <div class="mod-tab-panel jmod_select_province_city">
+                                            <div class="tab-item cur" _province_id="100000">
+                                                <span class="item-in">北京</span>
+                                            </div>
+                                            <div class="tab-item" _city_id="">
+                                                <span class="item-in">请选择</span>
+                                            </div>
+                                        </div>
+                                        <div class="mod-tab-content">
+                                            <div class="tab-content clearfix jmod_select_province">
+
+                                                <div class="address-item checked" _province_id="100000"><span>北京</span></div>
+
+                                                <div class="address-item " _province_id="100020"><span>天津</span></div>
+
+                                                <div class="address-item " _province_id="100040"><span>河北</span></div>
+
+                                                <div class="address-item " _province_id="100053"><span>山西</span></div>
+
+                                                <div class="address-item " _province_id="100066"><span>内蒙古</span></div>
+
+                                                <div class="address-item " _province_id="100080"><span>辽宁</span></div>
+
+                                                <div class="address-item " _province_id="100096"><span>吉林</span></div>
+
+                                                <div class="address-item " _province_id="100107"><span>黑龙江</span></div>
+
+                                                <div class="address-item " _province_id="100122"><span>上海</span></div>
+
+                                                <div class="address-item " _province_id="100143"><span>江苏</span></div>
+
+                                                <div class="address-item " _province_id="100158"><span>浙江</span></div>
+
+                                                <div class="address-item " _province_id="100171"><span>安徽</span></div>
+
+                                                <div class="address-item " _province_id="100190"><span>福建</span></div>
+
+                                                <div class="address-item " _province_id="100201"><span>江西</span></div>
+
+                                                <div class="address-item " _province_id="100214"><span>山东</span></div>
+
+                                                <div class="address-item " _province_id="100233"><span>河南</span></div>
+
+                                                <div class="address-item " _province_id="100253"><span>湖北</span></div>
+
+                                                <div class="address-item " _province_id="100272"><span>湖南</span></div>
+
+                                                <div class="address-item " _province_id="100288"><span>广东</span></div>
+
+                                                <div class="address-item " _province_id="100311"><span>广西</span></div>
+
+                                                <div class="address-item " _province_id="100327"><span>海南</span></div>
+
+                                                <div class="address-item " _province_id="100350"><span>重庆</span></div>
+
+                                                <div class="address-item " _province_id="100392"><span>四川</span></div>
+
+                                                <div class="address-item " _province_id="100415"><span>贵州</span></div>
+
+                                                <div class="address-item " _province_id="100426"><span>云南</span></div>
+
+                                                <div class="address-item " _province_id="100444"><span>西藏</span></div>
+
+                                                <div class="address-item " _province_id="100453"><span>陕西</span></div>
+
+                                                <div class="address-item " _province_id="100465"><span>甘肃</span></div>
+
+                                                <div class="address-item " _province_id="100481"><span>青海</span></div>
+
+                                                <div class="address-item " _province_id="100491"><span>宁夏</span></div>
+
+                                                <div class="address-item " _province_id="100498"><span>新疆</span></div>
+
+                                                <div class="address-item " _province_id="100518"><span>台湾</span></div>
+
+                                                <div class="address-item " _province_id="100543"><span>香港</span></div>
+
+                                                <div class="address-item " _province_id="100545"><span>澳门</span></div>
+
+                                                <div class="address-item " _province_id="100547"><span>其它</span></div>
+
+                                            </div>
+                                            <div class="tab-content clearfix hidden jmod_select_city">
+
+                                                <div class="address-item" _city_id="100001"><span>东城</span></div>
+
+                                                <div class="address-item" _city_id="100002"><span>西城</span></div>
+
+                                                <div class="address-item" _city_id="100003"><span>崇文</span></div>
+
+                                                <div class="address-item" _city_id="100004"><span>宣武</span></div>
+
+                                                <div class="address-item" _city_id="100005"><span>朝阳</span></div>
+
+                                                <div class="address-item" _city_id="100006"><span>丰台</span></div>
+
+                                                <div class="address-item" _city_id="100007"><span>石景山</span></div>
+
+                                                <div class="address-item" _city_id="100008"><span>海淀</span></div>
+
+                                                <div class="address-item" _city_id="100009"><span>门头沟</span></div>
+
+                                                <div class="address-item" _city_id="100010"><span>房山</span></div>
+
+                                                <div class="address-item" _city_id="100011"><span>通州</span></div>
+
+                                                <div class="address-item" _city_id="100012"><span>顺义</span></div>
+
+                                                <div class="address-item" _city_id="100013"><span>昌平</span></div>
+
+                                                <div class="address-item" _city_id="100014"><span>大兴</span></div>
+
+                                                <div class="address-item" _city_id="100015"><span>平谷</span></div>
+
+                                                <div class="address-item" _city_id="100016"><span>怀柔</span></div>
+
+                                                <div class="address-item" _city_id="100017"><span>密云</span></div>
+
+                                                <div class="address-item" _city_id="100018"><span>延庆</span></div>
+
+                                                <div class="address-item" _city_id="100019"><span>其他</span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-period jmod_select_period">
+                                <span class="rest-title">服务期限</span>
+
+                                <span class="ui-tag mr checked" _period_id="1">一次性</span>
+
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="ui-button ui-button-primary ui-button-suc jmod_buy_btn " _stat_click_id="6_1">立即购买</a>
+
+                        <div class="service-grantee">
+                            <span class="grantee-title">服务保障</span>
+                            <div class="grantee-item icon-at-front ontime-grantee">承诺按时按质保证完成</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside-content jmod-corp-info">
+                    <div class="comp-represt">
+                        <div class="logo-wrap">
+                            <a href="/seller/corpinfo?c_id=316389"><img src="//p.qlogo.cn/zc_icon/0/3574fe23b350f6b4c15de8d9c44afeea/0" alt="精益求精集团"></a>
+                        </div>
+                        <div class="comp-info">
+                            <div><a class="comp-name" style="max-width:7em;display:inline-block;vertical-align:top;" title="精益求精集团" href="/seller/corpinfo?c_id=316389">精益求精集团</a><a href="/scenter/growth" target="_blank" class="lv">Lv2</a></div>
+                            <p class="weak deal-amount">销量&nbsp;<span class="num">575</span></p>
+                            <p class="weak deal-amount">咨询量&nbsp;<span class="num">1771</span></p>
+
+                            <a _stat_click_id="7_316389" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=319591724&amp;site=qq&amp;menu=yes" class="ui-button ui-button-primary ui-button-sm jmod-wpa-qq jmod-consult-stat" _wpa_qq="319591724" data-cid="316389" data-csid="15632">QQ咨询</a>
+
+                        </div>
+                    </div>
+                    <div class="comp-rating-wrap">
+                        <ul class="comp-rating">
+                            <li class="comp-rating-item">
+                                <h4 class="comp-rating-title">完成质量</h4>
+                                <div class="comp-rating-score mod-emph" style="">5.0分</div>
+                            </li>
+                            <li class="comp-rating-item">
+                                <h4 class="comp-rating-title">服务态度</h4>
+                                <div class="comp-rating-score mod-emph" style="">5.0分</div>
+                            </li>
+                            <li class="comp-rating-item">
+                                <h4 class="comp-rating-title">工作速度</h4>
+                                <div class="comp-rating-score mod-emph" style="">5.0分</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mod-tab-panel jmod_company_wrap">    <div class="tab-item cur">      <span class="item-in">公司简介</span>    </div>    <div class="tab-item">      <span class="item-in">业务介绍</span>    </div>  </div>  <div class="mod-tab-content jmod_company_content_wrap">    <div class="tab-content" style="height:200px">      <p>精益求精财税—为创业者而生！秉承“待人以诚、持事以信、精益求精”的服务宗旨迎合“大众创业，万众创新”的时代浪潮，互联网+工商专利行业领跑者，专注于企业个性化一条龙服务。更多免费公益活动等您来体验</p>    </div>    <div class="tab-content hidden" style="height:200px">      <p>代理公司注册工商执照、商标专利、记账报税、一般纳税人申请、商务秘书地址挂靠、；食品流通许可证和各类批文、资质审批、国家高新企业培育及申请！精益求精集团拥有逾百人的成熟、专业、激情的资深运营管理团队！</p>    </div>  </div></div>
+            </div>
+            <div class="service-detail-body">
+                <div class="layout clearfix">
+                    <div class="leftside-content jmod-sku-detail">
+                        <div class="mod-head mod-head-small">
+                            <h3 class="mod-title-small">服务内容详情</h3>
+                        </div>
+                        <div class="service-detail-cont">
+                            <div class="service-detail-title">服务详细介绍</div>
+                            <div class="appendix">
+                                <div class="content jmod_detail_wrap"><div style="max-width: 100%; color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><strong><span style="font-size: 32px;"><img src="//p.qlogo.cn/zc_icon/0/f030fe99cf31acff6fe47ee6f4ba7828/0" border="0" width="817" height="360"><br></span></strong></div><strong style="color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><span style="font-size: 32px;"></span></strong><div><strong style="font-size: 14px;"><span style="font-size: 32px;"><br></span></strong></div><div><strong style="font-size: 14px;"><span style="font-size: 32px;">可免费提供广东区域的地址注册哦！全程无需本人</span></strong></div><div><strong style="color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><span style="font-size: 32px;"><br></span></strong></div><div><strong style="color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><span style="font-size: 32px;">到场，欢迎前来咨询<img src="//p.qlogo.cn/zc_icon/0/d1f8a8bfe8ef9aadb45ffa4aa73e7a10/0" border="0" width="750" height="517"><img src="//p.qlogo.cn/zc_icon/0/3c79c5019d61200dc4c4edf58fc8a41c/0" border="0" width="750" height="953"><img src="//p.qlogo.cn/zc_icon/0/ddc1a3707a8df13686d98fc9c6281e0a/0" border="0" width="750" height="545"><img src="//p.qlogo.cn/zc_icon/0/6a8ebf460074a60a4c3bd4a503168039/0" border="0" width="750" height="1131"></span><span style="font-size: 32px;"></span></strong></div><div></div><div><div style="max-width: 100%; color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><br></div><div style="max-width: 100%; color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"></div><div style="max-width: 100%; color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"></div><div style="max-width: 100%; color: rgb(135, 135, 135); font-family: 'microsoft yahei', arial, sans-serif; font-size: 14px; line-height: 20px; background-color: rgb(244, 244, 244);"><strong style="font-size: 32px;"><img src="//p.qlogo.cn/zc_icon/0/c038cb3199046a0129eeab5540642d68/0" border="0" width="750" height="510" style="border: none; outline: none; max-width: 100%;"><img src="//p.qlogo.cn/zc_icon/0/d1d776cc671dff2feb4c1d74e8addbb9/0" border="0" width="750" height="648"><img src="//p.qlogo.cn/zc_icon/0/dcb5d737cd7cb8ee9954cbb799e57df7/0" border="0" width="803" height="370"></strong></div></div></div>
+                            </div>
+                            <div class="transact-step-cont service-detail-wrap">
+                                <div class="service-detail-title">办理步骤及所需时间</div>
+                                <div class="content">
+                                    1、点击右侧客服咨询（5分钟内信息回复）<br>2、咨询有关工商注册信息（及问及答）<br>3、解决相关工商咨询信息
+                                </div>
+                            </div>
+                            <div class="prepare-stuff-cont service-detail-wrap">
+                                <div class="service-detail-title">办理所需材料</div>
+                                <div class="content">
+                                    1、点击右侧客服咨询（5分钟内信息回复）<br>2、咨询有关工商注册信息（及问及答）<br>3、解决相关工商咨询信息
+                                </div>
+                            </div>
+
+                            <div class="process-time-cont service-detail-wrap">
+                                <div class="service-detail-title">交付时长</div>
+                                <div class="content">
+                                    付款后5天内交付服务。如遇办理材料问题，请与服务商及时沟通。
+                                </div>
+                            </div>
+
+
+                            <div class="process-time-cont service-detail-wrap">
+                                <div class="service-detail-title">交付材料</div>
+                                <div class="content">
+
+                                    1、1、一码一照营业执照及副本 2、公章、私章、财务章 3、公司章程 4、纳税人申报纳税须知<br>
+
+                                </div>
+                            </div>
+
+                            <div class="process-time-cont service-detail-wrap">
+                                <div class="service-detail-title">售后服务</div>
+                                <div class="content">
+                                    及时响应<br>咨询5分钟内<br>立即与您联系<br><br>专职客服人员<br>一对一服务
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightside-content jmod-platform-garantee">
+                        <div class="mod-head mod-head-small">
+                            <h3 class="mod-title-small">平台保障</h3>
+                        </div>
+                        <div class="mod-white-box">
+                            <div class="guart-wrap">
+                                <ul class="guart-list">
+                                    <li class="guart-item guart-quality">
+                                        <div class="guart-item-wrap">
+                                            <h4 class="guart-item-title">商家资质认证</h4>
+                                            <div class="guart-item-desc">严筛服务商，提供品质服务</div>
+                                        </div>
+                                    </li>
+                                    <li class="guart-item guart-instant">
+                                        <div class="guart-item-wrap">
+                                            <h4 class="guart-item-title">需求闪电响应</h4>
+                                            <div class="guart-item-desc">首次需求响应不超3分钟</div>
+                                        </div>
+                                    </li>
+                                    <li class="guart-item guart-service">
+                                        <div class="guart-item-wrap">
+                                            <h4 class="guart-item-title">平台交易担保</h4>
+                                            <div class="guart-item-desc">服务满意，再付款给服务商</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部固定内容-start-->
+    <div class="mod-footer-prom dark-theme">
+        <div class="layout">
+            <div class="mod-footer-prom-list">
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-qt"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">商家资质认证</div>
+                        <div class="prom-ad">严筛服务商，提供品质服务</div>
+                    </div>
+                </div>
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-sp"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">需求闪电响应</div>
+                        <div class="prom-ad">首次需求响应不超3分钟</div>
+                    </div>
+                </div>
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-gt"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">平台交易担保</div>
+                        <div class="prom-ad">服务满意，再付款给服务商</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-contact">
+        <div class="layout">
+            <div class="footer-contact-col">
+                <p class="footer-contact-tit">联系我们</p>
+                <p class="footer-contact-qq">客服QQ：800013811</p>
+                <p class="footer-contact-email">商务合作：openservice@tencent.com</p>
+            </div>
+            <div class="footer-contact-col ml">
+                <span class="footer-contact-code"><img src="images/cf-code-55b0d8d92a.png"></span>
+                <p class="footer-contact-tit">关注公众号</p>
+                <p>掌握订单实时状态</p>
+                <p>获取创业最新资讯</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="layout">
+            <p>
+                <a target="_blank" href="">联系我们</a>|
+                <a target="_blank" href="">投诉举报</a>|
+                <a target="_blank" href="">Complaint Guidelines</a>|
+                <a target="_blank" href="">开放平台</a>
+            </p>
+            <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!--底部固定内容-end-->
+
+    <!--侧边悬浮内容-start-->
+    <div class="fixed-content">
+        <div class="item fixed-item-more code">
+            <div class="layer-content code-layer" style="display: none">
+                <div class="mod-tab-panel" style="visibility: hidden;height: 0px;">
+                    <div class="tab-item cur">
+                        <span class="item-in">开放平台</span>
+                    </div>
+                    <div class="tab-item">
+                        <span class="item-in">众创空间</span>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <img src="images/zc-code.png" width="113" height="113" alt="腾讯开放平台公众号">
+                    <p>创业服务平台</p>
+                    <p>微信公众号</p>
+                    <p class="intro">掌握订单实时状态，定期分享创业干货。</p>
+                </div>
+            </div>
+        </div>
+        <div class="item fixed-item-more feedback" title="反馈">反馈
+            <div class="layer-content layer">
+                <p>1.联系在线客服</p>
+                <p><a class="qq" href="javascript:void(0);" _wpa_plat_qq="800013811">QQ联系</a>800013811</p>
+                <br>
+                <p>2.关注微信公众号反馈留言</p>
+                <img src="images/zc-code.png" width="113" height="113" alt="腾讯众创空间公众号">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <a href="#" title="返回顶部" class="item backtop"></a>
+    </div>
+    <!--侧边悬浮内容-end-->
+
+    <!-- javascript code start -->
+    <!--公用js-start-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/page-common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/fixed-bar.js"></script>
+    <!--公用js-end-->
+    <script src="js/service.detail.js"></script>
+    <script src="js/service.detail.entry.js"></script>
+    <!-- javascript code end -->
+
+</body>
+
+</html>

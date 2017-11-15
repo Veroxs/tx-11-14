@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付提交</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--[if lt IE 9]>
+    <script src="js/es5-shim.min.js"></script>
+    <script src="js/es5-sham.min.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/page-user-order-detail-step1.css">
+</head>
+<body>
+    <!--<script>
+        document.domain = 'qq.com';
+        var hasLogin = '1';
+        var hasReg = '1';
+    </script>-->
+    <!--顶部固定内容-start-->
+    <div class="mod-topbar" id="jmod_topbar">
+        <div class="layout clearfix">
+            <div class="mod-topbar-links">
+                <a href="" class="mod-topbar-item" target="_blank">腾讯开放平台</a>
+                <a href="" class="mod-topbar-item" target="_blank">创业服务</a>
+                <a href="" class="mod-topbar-item" target="_blank">众创空间</a>
+                <a href="" class="mod-topbar-item" target="_blank">腾讯双百</a>
+            </div>
+            <div class="mod-topbar-right">
+                <div class="search mod-topbar-item">
+                    <div class="ui-search">
+                        <input type="text" class="jmod_search" placeholder="资料库/API搜索">
+                        <div class="ui-search-bg"></div>
+                        <a href="javascript:void(0);" class="ui-search-btn jmod_search_btn"></a>
+                    </div>
+                    <span class="close"></span>
+                    <span class="btn" id="jmod_search_btn">搜索</span>
+                </div>
+                <a href="" target="_blank" class="mod-topbar-item">管理中心</a>
+                <a href="" target="_blank" class="mod-topbar-item jmod-header-order">我的订单</a>
+                <a href="" target="_blank" class="mod-topbar-item">我的项目</a>
+                <a id="msgUnReadNum" href="" target="_blank" class="msg mod-topbar-item">消息</a>
+                <a href="javascript:void(0);" class="login mod-topbar-item jmod_login_btn">登录</a>
+                <div class="user mod-topbar-item jmod_nav_username" style="display: none;">
+                    <p class="name">
+                        <span id="navigationUserName"><a href="" target="_blank"></a></span>
+                        <i></i>
+                    </p>
+                    <div class="dropdown">
+                        <a id="navigationUserLogOut" style="display: inline-block; width: 100%;" href="javascript:void(0);">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mod-header">
+        <div class="layout clearfix">
+            <a href="" class="mod-header-logo"><img src="images/logo-cf-139cc3263a.png"></a>
+            <div class="mod-header-slogan">
+                <span class="item item-1">商家资质认证</span>
+                <span class="item item-2">需求闪电响应</span>
+                <span class="item item-3">平台交易担保</span>
+            </div>
+        </div>
+    </div>
+    <div id="jmod-nav-wrap" class="mod-nav">
+        <div class="layout">
+            <div class="mod-nav-item mod-nav-menu">
+                <h3 class="mod-nav-tit">服务分类<i class="arrow"></i></h3>
+                <ul class="mod-nav-list" id="jmod_nav_menu">
+                    <li>
+                        <p class="mod-nav-row ">
+                            <a target="_blank" href="">工商注册</a>
+                            <a target="_blank" href="">财税服务</a>
+                            <a target="_blank" href="">内容服务</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">工商注册</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">公司注册</a></li>
+                                <li><a href="" target="_blank">个人独资企业注册</a></li>
+                                <li><a href="" target="_blank">公司注册地址服务</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">财税服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">代理记账</a></li>
+                                <li><a href="" target="_blank"> 税务代办</a></li>
+                                <li><a href="" target="_blank">财务审计</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">内容服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">图文策划</a></li>
+                                <li><a href="" target="_blank">视频策划</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">知识产权</a>
+                            <a target="_blank" href="">资质办理</a>
+                            <a target="_blank" href="">法律服务</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">知识产权</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">商标注册</a></li>
+                                <li><a href="" target="_blank">加急商标注册</a></li>
+                                <li><a href="" target="_blank">海外商标注册</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">资质办理</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">ICP经营许可证</a></li>
+                                <li><a href="" target="_blank">网络文化经营许可证</a></li>
+                                <li><a href="" target="_blank">高新企业认证</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">法律服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">人事法律顾问</a></li>
+                                <li><a href="" target="_blank">电话问律师</a></li>
+                                <li><a href="" target="_blank">合同</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">微信服务</a>
+                            <a target="_blank" href="">软件开发</a>
+                            <a target="_blank" href="">APP开发</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">微信服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">公众号申请</a></li>
+                                <li><a href="" target="_blank">公众号认证</a></li>
+                                <li><a href="" target="_blank">微信支付开通</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">软件开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">云服务</a></li>
+                                <li><a href="" target="_blank">软件测试</a></li>
+                                <li><a href="" target="_blank">工具软件开发</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">APP开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">生活类</a></li>
+                                <li><a href="" target="_blank">工具类</a></li>
+                                <li><a href="" target="_blank">娱乐类</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row ">
+                            <a target="_blank" href="">人力资源</a>
+                            <a target="_blank" href="">社保服务</a>
+                            <a target="_blank" href="">企业管理</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">人力资源</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">通用能力培训</a></li>
+                                <li><a href="" target="_blank">人事咨询</a></li>
+                                <li><a href="" target="_blank">人才测评</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">社保服务</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">企业社保</a></li>
+                                <li><a href="" target="_blank">人事社保咨询</a></li>
+                                <li><a href="" target="_blank">公积金开户</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">企业管理</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">行政采购</a></li>
+                                <li><a href="" target="_blank">企业采购</a></li>
+                                <li><a href="" target="_blank">团队协作</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row">
+                            <a target="_blank" href="">视觉设计</a>
+                            <a target="_blank" href="">市场传播</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">视觉设计</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">商标设计</a></li>
+                                <li><a href="" target="_blank">PC页面设计</a></li>
+                                <li><a href="" target="_blank">APP设计</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">市场传播</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                                <li><a href="" target="_blank">整合营销</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="mod-nav-row last">
+                            <a target="_blank" href="">网站开发</a>
+                            <a target="_blank" href="">创业支持</a>
+                        </p>
+                        <div class="mod-nav-submenu">
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">网站开发</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">企业网站</a></li>
+                                <li><a href="" target="_blank">网页特效设计</a></li>
+                                <li><a href="" target="_blank">前端开发</a></li>
+                            </ul>
+                            <h5 class="mod-nav-topcate">
+                                <a target="_blank" href="">创业支持</a>
+                            </h5>
+                            <ul>
+                                <li><a href="" target="_blank">场地设备</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="mod-nav-item cur">首页</a>
+            <a href="" class="mod-nav-item">商家列表</a>
+        </div>
+    </div>
+    <!--顶部固定内容-end-->
+
+    <div id="jmod_main_container">
+        <div class="mall-container jmod_order_confirm_form">
+            <div class="layout">
+                <div class="customer-main jmod_main_content">
+                    <ul class="mod-orderstep" style="margin-bottom: 0px;"><li class="mod-orderstep-item mod-orderstep-cur" style="width: 160px;"><p class="mod-orderstep-count">1</p><p class="mod-orderstep-title">提交订单</p><i style="width: 350px"></i></li><li class="mod-orderstep-item" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">2</p><p class="mod-orderstep-title">付款</p><i style="width: 350px"></i></li><li class="mod-orderstep-item" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">3</p><p class="mod-orderstep-title">接受服务</p><i style="width: 350px"></i></li><li class="mod-orderstep-item" style="width: 160px; margin-left: 184.333px;"><p class="mod-orderstep-count">4</p><p class="mod-orderstep-title">确认服务完成</p></li></ul>
+                    <!--买家信息-->
+                    <div class="mod-white-box payment-content-box">
+                        <div class="title-18px">买家信息</div>
+                        <div class="pay-card-wrap jmod_pay_card_wrap">
+                            <!-- 默认 -->
+                            <div class="ui-paycard jmod_pay_card is-checked" _ua_id="92487" style="height: 162px;">
+                                <a href="javascript:void(0);" class="ui-paycard-edit jmod_edit_btn"></a>
+                                <a href="javascript:void(0);" class="ui-paycard-del jmod_del_btn"></a>
+                                <div class="ui-paycard-row">
+                                    <div class="ui-paycard-title">姓名</div>
+                                    <div class="ui-paycard-val"><p class="jmod_name_wrap">林夕</p></div>
+                                </div>
+                                <div class="ui-paycard-row">
+                                    <div class="ui-paycard-title">联系电话</div>
+                                    <div class="ui-paycard-val"><p class="jmod_mobile_wrap">13200000000</p></div>
+                                </div>
+                                <div class="ui-paycard-row">
+                                    <div class="ui-paycard-title">邮箱</div>
+                                    <div class="ui-paycard-val"><p class="jmod_email_wrap pay-card-mail">794581100@qq.com</p></div>
+                                </div>
+                                <div class="ui-paycard-row">
+                                    <div class="ui-paycard-title">公司</div>
+                                    <div class="ui-paycard-val">
+                                        <p class="pay-card-company jmod_corp_wrap">互动创想</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-col jmod_add_btn">
+                            <a href="javascript:void(0);" class="add-item">+ 添加买家信息</a>
+                        </div>
+                        <div class="mod-form jmod_edit_form" style="display:none">
+                            <div class="mod-form-special">
+                                <div class="mod-form-hd"><h4 class="caption caption-special jmod_form_header">添加买家信息</h4></div>
+                                <div class="mod-form-bd">
+
+                                    <div class="mod-form-row">
+                                        <div class="mod-form-tit">
+                                            <label><span class="require">*</span>姓名</label>
+                                        </div>
+                                        <div class="mod-form-cont jmod_form_col">
+                                            <div class="ui-input default-input-width">
+                                                <input type="text" name="ua_name" validate="true" validate_type="empty|jsLength" maxlength="10" maxlen="10" minlen="2" validate_tip="请填写姓名|2-10个字" placeholder="请填写真实姓名">
+                                                <div class="ui-input-bg"></div>
+                                            </div>
+                                            <p class="input-tips err hidden">
+                                                <span class="ico-err"></span><span>您的输入有误</span>
+                                            </p>
+                                            <p class="input-tips suc hidden">
+                                                <span class="ico-suc"></span>您的输入正确
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mod-form-row">
+                                        <div class="mod-form-tit">
+                                            <label><span class="require">*</span>联系电话</label>
+                                        </div>
+                                        <div class="mod-form-cont jmod_form_col">
+                                            <div class="ui-input default-input-width">
+                                                <input type="text" name="ua_mobile" maxlength="11" maxlen="11" validate="true" validate_type="empty|legal" legal_type="mobile_phone" validate_tip="请填写11位手机号码|请填写11位手机号码" placeholder="请填写常用电话，便于服务商与您联系">
+                                                <div class="ui-input-bg"></div>
+                                            </div>
+                                            <p class="input-tips err hidden">
+                                                <span class="ico-err"></span><span>您的输入有误</span>
+                                            </p>
+                                            <p class="input-tips suc hidden">
+                                                <span class="ico-suc"></span>您的输入正确
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mod-form-row">
+                                        <div class="mod-form-tit">
+                                            <label>邮箱</label>
+                                        </div>
+                                        <div class="mod-form-cont jmod_form_col">
+                                            <div class="ui-input default-input-width">
+                                                <input type="text" name="ua_email" validate="true" validate_type="legal" legal_type="email" maxlength="50" validate_tip="请填写真实邮箱" placeholder="请填写您的常用邮箱">
+                                                <div class="ui-input-bg"></div>
+                                            </div>
+                                            <p class="input-tips err hidden">
+                                                <span class="ico-err"></span><span>您的输入有误</span>
+                                            </p><p class="input-tips suc hidden">
+                                            <span class="ico-suc"></span>您的输入正确
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="mod-form-row">
+                                        <div class="mod-form-tit">
+                                            <label>公司</label>
+                                        </div>
+                                        <div class="mod-form-cont jmod_form_col">
+                                            <div class="ui-input default-input-width">
+                                                <input type="text" name="ua_corp_name" validate="true" validate_type="jsLength" maxlength="25" maxlen="25" minlen="2" validate_tip="2-25个字" placeholder="建议您填写所在公司的信息，便于服务商对你的公司进行服务">
+                                                <div class="ui-input-bg"></div>
+                                            </div>
+                                            <p class="input-tips err hidden">
+                                                <span class="ico-err"></span><span>您的输入有误</span>
+                                            </p><p class="input-tips suc hidden">
+                                            <span class="ico-suc"></span>您的输入正确
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="mod-form-row">
+                                        <div class="mod-form-tit">
+                                        </div>
+                                        <div class="mod-form-cont">
+                                            <a href="javascript:void(0);" class="ui-button ui-button-primary jmod_save_btn">确定</a><a href="javascript:void(0);" class="ui-button jmod_cancel_btn" style="color:#323232">取消</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--服务信息-->
+                    <div class="mod-white-box payment-content-box">
+                        <div class="title-18px">服务信息</div>
+                        <p class="weak">您选择购买如下企业服务，请确认服务内容及价格</p>
+                        <div class="ui-table table-mall table-order table-submit-c theme-2">
+                            <table>
+                                <colgroup>
+                                    <col class="col-service-cont">
+                                    <col class="col-vender-name">
+                                    <col class="col-service-region">
+                                    <col class="col-service-period">
+                                    <col class="col-price">
+                                    <col class="col-quantity">
+                                    <col class="col-total-price">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>订单内容</th>
+                                    <th>服务商</th>
+                                    <th>服务地区</th>
+                                    <th>服务期限</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                    <th>小计</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-text-left">
+                                        <p class="primary"><a href="/cmdty/detail?csId=17666" target="_blank">创业问诊（公司名称查询）</a></p>
+                                        <p class="primary">
+                                            <span class="icon-grantee" title="承诺按时按质保证完成"></span>
+
+                                            <span class="icon-receipt" title="提供发票"></span>
+
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="primary-weak"><a href="/seller/corpinfo?c_id=320425&amp;tab=1" target="_blank">中港星</a><a href="/scenter/growth" target="_blank" class="lv">Lv2</a></p>
+                                        <p><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2374149901&amp;site=qq&amp;menu=yes" class="qq-service icon-qq jmod-wpa-qq" _wpa_qq="2374149901">QQ咨询</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="weak">福建－厦门</p>
+                                    </td>
+                                    <td>
+                                        <p class="weak">一次性</p>
+                                    </td>
+                                    <td>
+
+                                        <p class="primary">¥1.00</p>
+                                    </td>
+                                    <td class="td-quantity">
+                                        <div class="mod-quantity">
+                                            <span class="mod-quantity-btn mod-quantity-minus inactived">-</span>
+                                            <input class="mod-quantity-number" type="text" value="1">
+                                            <span class="mod-quantity-btn mod-quantity-plus">+</span>
+                                        </div>
+                                        <div class="input-tips count-tips hidden">最多只可购买1000件</div>
+                                        <div class="input-tips count-tips hidden">活动商品仅可购买1件</div>
+                                        <div class="input-tips count-tips hidden">活动商品仅剩余1件</div>
+                                    </td>
+                                    <td>
+                                        <p class="primary total-price">¥1.00</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="message-wrap jmod_all_form">
+                            <p class="weak payment-msg-title">给服务商留言</p>
+                            <div class="form-col jmod_form_col">
+                                <div class="ui-textarea count default-input-width">
+                                    <textarea rows="2" id="msg-input" name="message" placeholder="选填，请填写你对此服务的要求" validate="true" validate_type="legal|jsLength" legal_type="special_code" maxlength="30" maxlen="30" minlen="1" validate_tip="留言包含特殊字符|1-30个字"></textarea>
+                                    <div class="ui-textarea-bg"></div>
+                                    <label for="msg-input" class="ui-textarea-count">
+                                        <i>0</i>/<i>30</i>
+                                    </label>
+                                </div>
+                                <div class="input-tips err hidden" id="msd-tips">
+                                    <span class="ico-err"></span><span>1-30个字</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-summery">
+                        <div class="total">应付总额：<span class="cost jmod_totalPrice">1.00元</span></div>
+                        <div class="agreement" style="overflow:hidden;">
+                            <div style="float:right;text-align: left;">
+                                <div class="ui-checkbox" style="display:block;margin-bottom:10px;">
+                                    <input type="checkbox" id="agreement" name="agreement" checked="">
+                                    <label for="agreement" class="ui-checkbox-rect checked"></label>
+                                    <label for="agreement" class="ui-checkbox-text">同意 <a href="javascript:void(0);" id="show_protocol">《腾讯众创空间第三方服务声明》</a></label>
+                                </div>
+                                <div class="ui-checkbox" style="display:block">
+                                    <input type="checkbox" id="userAgreement" name="userAgreement" checked="">
+                                    <label for="userAgreement" class="ui-checkbox-rect checked"></label>
+                                    <label for="userAgreement" class="ui-checkbox-text">同意 <a href="javascript:void(0);" id="show_user_protocol">《用户授权协议》</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-wrap">
+                            <a href="javascript:void(0)" class="ui-button ui-button-primary" id="jmod_cancel_submit">返回</a>
+                            <a href="javascript:void(0)" class="ui-button ui-button-suc" id="jmod_confirm_submit">提交订单</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部固定内容-start-->
+    <div class="mod-footer-prom dark-theme">
+        <div class="layout">
+            <div class="mod-footer-prom-list">
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-qt"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">商家资质认证</div>
+                        <div class="prom-ad">严筛服务商，提供品质服务</div>
+                    </div>
+                </div>
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-sp"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">需求闪电响应</div>
+                        <div class="prom-ad">首次需求响应不超3分钟</div>
+                    </div>
+                </div>
+                <div class="mod-footer-prom-item">
+                    <div class="prom-icon prom-icon-gt"></div>
+                    <div class="prom-item-ct">
+                        <div class="prom-title">平台交易担保</div>
+                        <div class="prom-ad">服务满意，再付款给服务商</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-contact">
+        <div class="layout">
+            <div class="footer-contact-col">
+                <p class="footer-contact-tit">联系我们</p>
+                <p class="footer-contact-qq">客服QQ：800013811</p>
+                <p class="footer-contact-email">商务合作：openservice@tencent.com</p>
+            </div>
+            <div class="footer-contact-col ml">
+                <span class="footer-contact-code"><img src="images/cf-code-55b0d8d92a.png"></span>
+                <p class="footer-contact-tit">关注公众号</p>
+                <p>掌握订单实时状态</p>
+                <p>获取创业最新资讯</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="layout">
+            <p>
+                <a target="_blank" href="">联系我们</a>|
+                <a target="_blank" href="">投诉举报</a>|
+                <a target="_blank" href="">Complaint Guidelines</a>|
+                <a target="_blank" href="">开放平台</a>
+            </p>
+            <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!--底部固定内容-end-->
+
+    <!--侧边悬浮内容-start-->
+    <div class="fixed-content">
+        <div class="item fixed-item-more code">
+            <div class="layer-content code-layer" style="display: none">
+                <div class="mod-tab-panel" style="visibility: hidden;height: 0px;">
+                    <div class="tab-item cur">
+                        <span class="item-in">开放平台</span>
+                    </div>
+                    <div class="tab-item">
+                        <span class="item-in">众创空间</span>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <img src="images/zc-code.png" width="113" height="113" alt="腾讯开放平台公众号">
+                    <p>创业服务平台</p>
+                    <p>微信公众号</p>
+                    <p class="intro">掌握订单实时状态，定期分享创业干货。</p>
+                </div>
+            </div>
+        </div>
+        <div class="item fixed-item-more feedback" title="反馈">反馈
+            <div class="layer-content layer">
+                <p>1.联系在线客服</p>
+                <p><a class="qq" href="javascript:void(0);" _wpa_plat_qq="800013811">QQ联系</a>800013811</p>
+                <br>
+                <p>2.关注微信公众号反馈留言</p>
+                <img src="images/zc-code.png" width="113" height="113" alt="腾讯众创空间公众号">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <a href="#" title="返回顶部" class="item backtop"></a>
+    </div>
+    <!--侧边悬浮内容-end-->
+
+    <!-- javascript code start -->
+    <!--公用js-start-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/page-common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/fixed-bar.js"></script>
+    <!--公用js-end-->
+    <script src="js/user.order.detail.step1.js"></script>
+    <script src="js/user.order.detail.step1.entry.js"></script>
+    <!-- javascript code end -->
+</body>
+</html>
