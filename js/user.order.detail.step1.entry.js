@@ -221,7 +221,7 @@
                         }
                         var d = this.getUserAddrInfoHtml(t), s = this.getNewOrderInfoHtml(t),
                             c = this.getOrderSummaryHtml(t);
-                        a += d + s + c, e(".jmod_main_content").append(n, a), r()
+                        a += d + s + c, r()
                     }
                 }, {
                     key: "getUserAddrInfoHtml", value: function () {

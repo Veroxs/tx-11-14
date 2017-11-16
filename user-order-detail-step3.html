@@ -449,6 +449,21 @@
     </div>
     <!--侧边悬浮内容-end-->
 
+    <!--弹窗-->
+    <div class="ui-dialog-wrap" style="display: none;">
+        <div class="ui-dialog active">
+            <a class="ui-dialog-close jmod-close"></a>
+            <div class="ui-dialog-title">确认取消订单</div>
+            <div class="ui-dialog-body">
+                <p class="ui-dialog-alert">确认取消订单？</p>
+                <p class="weak s-tips">确认取消订单后，腾讯将退还您费用。</p>
+            </div>
+            <div class="ui-dialog-footer">
+                <a href="#" class="jmod-ok ui-button ui-button-suc">确认取消</a>
+            </div>
+        </div>
+    </div>
+
     <!-- javascript code start -->
     <!--公用js-start-->
     <script src="js/jquery-1.12.0.min.js"></script>
@@ -456,9 +471,37 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
-    <<!--script src="js/user.order.detail.step3.js"></script>
-    <script src="js/user.order.detail.stepOther.entry.js"></script>
-    <script src="js/qrcode.js"></script>-->
+    <script type="text/javascript">
+        $(function(){
+            step3.init();
+
+        })
+        var step3 = {
+            init:function () {
+                this.event.popupShow();
+                this.event.popupHide();
+                this.event.comfrimOk();
+            },
+            event:{
+                popupShow:function(){
+                    $('body').on('click','.jmod_canNref_order',function(){
+                        $('.ui-dialog-wrap').show();
+                    })
+                },
+                popupHide:function(){
+                    $('body').on('click','.jmod-close',function(){
+                        $('.ui-dialog-wrap').hide();
+                    })
+                },
+                comfrimOk:function(){
+                    $('body').on('click','.jmod-ok',function(){
+                        $('.ui-dialog-wrap').hide();
+                        console.log('do something');
+                    })
+                }
+            }
+        }
+    </script>
     <!-- javascript code end -->
 
 </body>
