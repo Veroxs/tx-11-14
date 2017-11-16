@@ -2049,3 +2049,12 @@ button, input, select, textarea {
 .ui-button-gray.disabled:hover {
     background-color: #ccc
 }
+.ui-button-warn {
+    background-color: #ee9b9e;
+    color: #fff;
+    border-color: #ee9b9e
+}
+
+.ui-button-warn:hover {
+    background-color: #ee9b9e
+}

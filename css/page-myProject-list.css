@@ -1303,3 +1303,23 @@
     margin-top: 16px;
     text-align: center
 }
+
+/*add style*/
+.normal-table thead td{
+    padding: 8px 0;
+    border: none;
+}
+.normal-table tbody td{
+    background: #fff;
+    padding: 18px 20px!important;
+    border: none;
+}
+.normal-table tbody td p{
+    text-align: center;
+}
+.normal-table tbody td.txt-l p{
+    text-align: left;
+}
+.normal-table tbody td.date p{
+    color: #888;
+}
