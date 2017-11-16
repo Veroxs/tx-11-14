@@ -399,20 +399,17 @@
                 <div class="provider-index-box service-list-box">
                     <div class="layout">
                         <div class="sort-opt jmod-filter-option">
-                            <a href="javascript:void(0)" class="opt cur" _stat_click_id="6_1" data-value="0">综合</a>
-                            <a href="javascript:void(0)" _stat_click_id="6_2" data-value="1" class="opt">人气</a>
-                            <a href="javascript:void(0)" _stat_click_id="6_3" class="opt" id="price-sort" data-value="3">
+                            <a class="opt cur">综合</a>
+                            <a class="opt">人气</a>
+                            <a class="opt" id="sort-price">
                                 价格
-                                <span id="sort-des" _stat_click_id="7_1" class="sortby des" style="display:none;"></span>
-                                <span class="sortby asc" id="sort-asc" _stat_click_id="7_2"></span>
+                                <span id="sort-des" class="sortby des" style="display:none;"></span>
+                                <span class="sortby asc" id="sort-asc"></span>
                             </a>
                             <div class="address-info">
-                                <div id="choose-address" class="ui-address choose-address ui-address-close">
-                                    <div class="ui-checkbox-wrap" _stat_click_id="7_3">
-                                        <label id="address-text" for="add16" class="ui-checkbox-text">选择服务地区</label>
-                                        <span class="ui-address-tri">
-              <span class="ui-address-tri-icon"></span>
-            </span>
+                                <div id="choose-address distpicker" class="ui-address choose-address ui-address-close">
+                                    <div class="ui-checkbox-wrap">
+                                        <input id="city-picker" data-toggle="city-picker" class="ui-checkbox-text" value="选择服务地区">
                                     </div>
                                 </div>
                                 <span class="item">共<span id="jmod-res-num">0</span>个筛选结果</span>
@@ -586,8 +583,8 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
-    <!--<script src="js/merchant.detail.js"></script>
-    <script src="js/merchant.detail.entry.js"></script>-->
+    <script src="js/city-picker.data.js"></script>
+    <script src="js/city-picker.js"></script>
     <!-- javascript code end -->
     <script type="text/javascript">
         $(function(){
@@ -596,6 +593,8 @@
         var merchantDetail = {
             init:function(){
                 this.event.tabSwitch();
+                this.event.sortSwitch();
+                this.event.addressPicker();
             },
             event:{
                 tabSwitch:function(){
@@ -604,6 +603,15 @@
                         t.addClass("cur").siblings().removeClass("cur");
                         $(".jmod-tabcontent>div:eq(" + t.index() + ")").show().siblings().hide();
                     })
+                },
+                sortSwitch:function(){
+                    $('body').on('click','.jmod-filter-option .opt',function(){
+                        $(this).addClass('cur').siblings().removeClass('cur');
+                    });
+
+                },
+                addressPicker:function(){
+                    var $citypicker = $('#city-picker');
                 }
             }
         }

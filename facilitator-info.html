@@ -364,21 +364,16 @@
                         <label>所在城市<span class="require">*</span></label>
                     </div>
                     <div class="mod-form-cont">
-                        <div class="mod-form-col">
-                            <select class="select mr">
-                                <option value="">请选择省份</option>
-                                <option value="100000">北京</option>
+                        <div class="mod-form-col" data-toggle="distpicker">
+                            <select class="select mr" id="province1">
                             </select>
-                            <select class="select mr">
-                                <option value="">请选择市区</option>
-                                <option value="100000">北京</option>
+                            <select class="select mr" id="city1">
+
                             </select>
-                            <select class="select mr">
-                                <option value="">请选择县</option>
-                                <option value="100000">北京</option>
+                            <select class="select mr" id="district1">
+
                             </select>
                             <span class="input-tips err hidden">您的输入有误</span>
-
                         </div>
                     </div>
                 </div>
@@ -670,19 +665,25 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
+    <script src="js/distpicker.data.js"></script>
+    <script src="js/distpicker.js"></script>
     <script src="js/jquery.uploadView.js"></script>
     <script type="text/javascript">
-        $(".js_upFile").uploadView({
-            uploadBox: '.js_uploadBox',//设置上传框容器
-            showBox : '.js_showBox',//设置显示预览图片的容器
-            width : 100, //预览图片的宽度，单位px
-            height : 100, //预览图片的高度，单位px
-            allowType: ["gif", "jpeg", "jpg", "bmp", "png"], //允许上传图片的类型
-            maxSize :2, //允许上传图片的最大尺寸，单位M
-            success:function(e){
-                $('.btn-upload').removeClass('ui-file-add');
-            }
-        });
+        $(function(){
+            $(".js_upFile").uploadView({
+                uploadBox: '.js_uploadBox',//设置上传框容器
+                showBox : '.js_showBox',//设置显示预览图片的容器
+                width : 100, //预览图片的宽度，单位px
+                height : 100, //预览图片的高度，单位px
+                allowType: ["gif", "jpeg", "jpg", "bmp", "png"], //允许上传图片的类型
+                maxSize :2, //允许上传图片的最大尺寸，单位M
+                success:function(e){
+                    $('.btn-upload').removeClass('ui-file-add');
+                }
+            });
+
+        })
+
     </script>
     <!-- javascript code end -->
 

@@ -1,7 +1,4 @@
 // 图片上传前预览插件
-//Power By 勾国印
-//QQ:245629560
-//Blog:http://www.gouguoyin.cn
 (function($){  
 	$.fn.uploadView = function(options){
 		var defaults = {
