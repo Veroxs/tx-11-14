@@ -1,0 +1,44 @@
+body {
+    background-color: #fff;
+}
+.page-404 {
+    width: 1000px;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+.page-404 .container {
+    background: url(../images/404-bg.png) no-repeat 560px top;
+}
+
+.page-404 .settings .icon {
+    display: block;
+    width: 242px;
+    height: 106px;
+    background: url(../images/404.png) no-repeat 0 0;
+}
+.page-404 .settings h4 {
+    margin: 30px 0 15px 0;
+    font-size: 18px;
+    color: #2cb7fd;
+}
+.page-404 .settings p {
+    font-size: 14px;
+    color: #999;
+}
+.page-404 .settings > div {
+    margin-top: 40px;
+    font-size: 0;
+}
+.page-404 .settings > div a {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid #2cb7fd;
+    font-size: 15px;
+    color: #2cb7fd;
+    text-decoration: none;
+}
+.page-404 .settings > div a:first-child {
+    margin-right: 20px;
+    color: #fff;
+    background-color: #2cb7fd;
+}

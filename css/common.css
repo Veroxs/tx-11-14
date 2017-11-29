@@ -2058,3 +2058,147 @@ button, input, select, textarea {
 .ui-button-warn:hover {
     background-color: #ee9b9e
 }
+
+.popupMask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.login-box{
+    width: 510px;
+    min-height: 220px;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    margin-left: -258px;
+    margin-top: -170px;
+    padding: 40px 4px 80px 4px;
+}
+.login-box .title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login-box .login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+.login-box .form-line{
+    margin-bottom: 20px;
+}
+.login-box .form-line.yzm .inputOuter{
+    width: 182px;
+    display: inline-block;
+}
+.login-box .form-line.yzm .input-text{
+    width: 164px;
+}
+.login-box .inputOuter {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+}
+.login-box .uin_del {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: url(../images/del5-icon.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    display: none;
+}
+.login-box .yzm-box{
+    display: inline-block;
+    width: 100px;
+    height: 42px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.login-box .input-text {
+    width: 278px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    height: 18px;
+    padding: 10px 0 10px 10px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    color: #333;
+    font-family: Verdana,Tahoma,Arial;
+    font-size: 16px;
+}
+.login-box .btn {
+    width: 304px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+    color: #fff;
+    background: #86ce2f;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border: 1px solid #86ce2f;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+}
+.login-box .op-line{
+    height: 16px;
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.login-box .op-line .link {
+    color: #666;
+}
+.login-box .op-line .dotted {
+    color: #bfbfbf;
+    margin: 0 5px;
+}
+.login-box .tips{
+    margin-top: -10px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 35px;
+    font-size: 13px;
+    position: relative;
+    color: #ff3b30;
+    display: none;
+}
+.login-box .tips:before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top:0;
+    width: 30px;
+    height: 40px;
+    background: url("../images/jg-icon.png") no-repeat;
+    background-size: 18px auto;
+    background-position: center center;
+
+}
