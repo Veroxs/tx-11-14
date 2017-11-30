@@ -730,6 +730,7 @@
     <div class="popupMask"></div>
     <!--登录弹窗-->
     <div class="login-box">
+        <a class="close j-close"></a>
         <h3 class="title">帐号密码登录</h3>
         <div class="login-form">
             <div class="form-line">
@@ -797,6 +798,10 @@
                 if(name==''||pwd==''){
                     showTips('.tips');
                 }
+            })
+            $('body').on('click','.j-close',function(){
+                $('.login-box').hide();
+                $('.popupMask').remove();
             })
         })
     </script>

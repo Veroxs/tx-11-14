@@ -2080,6 +2080,18 @@ button, input, select, textarea {
     margin-top: -170px;
     padding: 40px 4px 80px 4px;
 }
+.login-box .close{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon-close.png") no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    cursor: pointer;
+}
 .login-box .title {
     font-size: 20px;
     color: #333;
