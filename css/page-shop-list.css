@@ -1,0 +1,192 @@
+.shop-list .provider-aboutcrumb-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shop-list .mod-boxhd {
+    position: relative;
+    padding-left: 12px;
+    line-height: 1;
+    margin-bottom: 20px
+}
+
+.shop-list .mod-boxhd:before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 24px;
+    background-color: #de373e;
+    top: 0;
+    left: 0
+}
+
+.shop-list .mod-boxhd-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #de373e;
+    font-size: 14px;
+    line-height: 1;
+    text-align: right
+}
+
+.shop-list .mod-boxhd-more .tips {
+    color: #323232;
+    display: inline-block
+}
+
+.shop-list .mod-boxhd-more .tips:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    background-image: url(../images/sprite-54b562872d.index.cf.png);
+    background-position: -463px -134px
+}
+
+.shop-list .mod-boxhd-tit {
+    display: inline-block;
+    vertical-align: top;
+    color: #323232;
+    margin-top: 0;
+    font-size: 22px
+}
+
+.shop-list .hot-provider {
+    padding: 30px 0
+}
+
+.shop-list .hot-provider .card {
+    position: relative;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 288px;
+    box-sizing: border-box
+}
+
+.shop-list .hot-provider .card .top {
+    height: 98px;
+    padding: 32px 10px 0;
+    border-bottom: 1px solid #e3e3e3;
+    color: #323232;
+    font-size: 14px;
+    background-image: url(../images/sprite-54b562872d.index.cf.png);
+    background-position: -190px 0
+}
+
+.shop-list .hot-provider .card .top h5 {
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    max-width: 163px;
+    max-height: 3em;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.shop-list .hot-provider .card .top h5 a:hover {
+    color: #de373e
+}
+
+.shop-list .hot-provider .card .top p span {
+    color: gray;
+    margin: 0 5px 0 3px
+}
+
+.shop-list .hot-provider .card .top p em {
+    color: #de373e;
+    margin: 0 5px 0 3px
+}
+
+.hot-provider .card .logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 16px
+}
+
+.shop-list .hot-provider .card .cate-tag {
+    font-size: 12px;
+    line-height: 14px;
+    width: 2em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 5px 7px 12px;
+    background-image: url(../images/sprite-54b562872d.index.cf.png);
+    background-position: -421px -134px
+}
+
+.shop-list .hot-provider .card .btm {
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px
+}
+
+.shop-list .hot-provider .card .btm .btn{
+    text-align: center;
+    width: 70px;
+    line-height: 26px;
+    padding: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #de373e;
+    border: 1px solid #de373e;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    display: inline-block;
+}
+.shop-list .hot-provider .card .btm .btn {
+    width: auto;
+    padding: 2px 14px;
+    margin-top: 28px
+}
+.shop-list .hot-provider .card .btm .btn:hover{
+    color: #fff;
+    background-color: #de373e;
+}
+
+.shop-list .hot-provider .card.ml0 {
+    margin-left: 0
+}
+.shop-list .partner {
+    background-color: #fcfcfc;
+    padding: 30px 0
+}
+
+.shop-list .partner .mod-boxbd {
+    border-top: 1px solid #e3e3e3
+}
+
+.shop-list .partner .card {
+    float: left;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-width: 0 1px 1px 0
+}
+
+.shop-list .partner .card img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.shop-list .partner .card.bl0 {
+    border-left-width: 1px
+}
+
