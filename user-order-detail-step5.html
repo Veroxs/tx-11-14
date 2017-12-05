@@ -533,9 +533,39 @@
     <script src="js/common.js"></script>
     <script src="js/fixed-bar.js"></script>
     <!--公用js-end-->
-    <script src="js/app/user.order.detail.step5.js"></script>
-    <script src="js/app/user.order.detail.stepOther.entry.js"></script>
-    <script src="js/qrcode.js"></script>
+    <!--<script src="js/app/user.order.detail.step5.js"></script>
+    <script src="js/app/user.order.detail.stepOther.entry.js"></script>-->
+    <script type="text/javascript">
+        $(function(){
+            $('body').on({
+                'mouseover':function(e){
+                    e.stopPropagation();
+                    var that = $(e.currentTarget);
+                    that.children('.star').addClass('checked'),
+                    that.prevAll(".mod-rating-star").children(".star").addClass("checked"),
+                    that.nextAll(".mod-rating-star").children(".star").removeClass("checked"),
+                    that.parent(this.selector).siblings(".payment-rating-concl").html(that.children(".star").attr("title"))
+                },
+                'mouseleave':function (e) {
+                    e.stopPropagation();
+                    var that = $(e.currentTarget);
+                   /* return 0 === parseInt(this.score, 10) ? (that.find(".star").removeClass("checked"),
+                    that.next(".payment-rating-concl").html("")) : (that.children(".mod-rating-star:nth-child(" + this.score + ")").prevAll(".mod-rating-star").children(".star").addClass("checked"),
+                    that.children(".mod-rating-star:nth-child(" + t.score + ")").children(".star").addClass("checked"),
+                    that.children(".mod-rating-star:nth-child(" + t.score + ")").nextAll(".mod-rating-star").children(".star").removeClass("checked"),
+                    that.siblings(".payment-rating-concl").html(that.children(".mod-rating-star:nth-child(" + t.score + ")").children(".star").attr("title")));*/
+                    $(this.selector).find(".star").removeClass("checked"),
+                    that.parent(this.selector).siblings(".payment-rating-concl").html(""),
+                    this.score = 0
+                },
+                'click':function (e) {
+                    e.stopPropagation();
+                    var that = $(e.currentTarget);
+                    this.score = that.siblings('input[type="radio"]').attr("value");
+                }
+            },'.mod-rating-star')
+        })
+    </script>
     <!-- javascript code end -->
 
 </body>
